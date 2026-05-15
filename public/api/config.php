@@ -2,7 +2,7 @@
 // Configurazione centralizzata LEO per hosting PHP classico.
 
 $leoConfig = [
-    'openai_api_key' => getenv('OPENAI_API_KEY') ?: '',
+    'openai_api_key' => getenv('OPENAI_API_KEY') ?: 'AIzaSyBy59aNqht2BS0MsXeVJOu6YMaBiLmjQgg',
     'db_host' => getenv('LEO_DB_HOST') ?: 'localhost',
     'db_name' => getenv('LEO_DB_NAME') ?: '',
     'db_user' => getenv('LEO_DB_USER') ?: '',
