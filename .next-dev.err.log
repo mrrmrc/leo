@@ -1,0 +1,2414 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<--- Last few GCs --->
+<--- Last few GCs --->
+<--- Last few GCs --->
+
+[20080:0000015E78AFF000]     1314 ms: Scavenge 3.3 (4.3) -> 2.6 (5.3) MB, pooled: 0 MB, 218.14 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+<--- Last few GCs --->
+<--- Last few GCs --->
+
+
+
+
+
+
+
+#
+#
+#
+
+<--- Last few GCs --->
+
+
+
+<--- Last few GCs --->
+<--- Last few GCs --->
+<--- Last few GCs --->
+<--- Last few GCs --->
+<--- Last few GCs --->
+<--- Last few GCs --->
+<--- Last few GCs --->
+# Fatal process out of memory: Re-embedded builtins: set permissions
+# Fatal process out of memory: Re-embedded builtins: set permissions
+# Fatal process out of memory: Re-embedded builtins: set permissions
+[89512:0000020D0602B000]     2344 ms: Mark-Compact (reduce) 5.3 (10.4) -> 5.0 (6.9) MB, pooled: 0 MB, 4.48 / 0.00 ms  (average mu = 0.998, current mu = 0.998) last resort; GC in old space requested
+[73156:000001C0B9930000]     1321 ms: Scavenge 3.7 (5.8) -> 3.4 (6.1) MB, pooled: 0 MB, 246.93 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+[37520:000001B2E2A82000]     1631 ms: Scavenge 3.7 (5.8) -> 3.4 (5.8) MB, pooled: 0 MB, 0.73 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+
+[56028:00000260649CB000]     1341 ms: Scavenge 3.7 (6.1) -> 3.4 (6.3) MB, pooled: 0 MB, 0.42 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+
+
+
+
+
+[89512:0000020D0602B000]     2347 ms: Mark-Compact (reduce) 5.0 (6.9) -> 5.0 (6.9) MB, pooled: 0 MB, 2.98 / 0.00 ms  (average mu = 0.997, current mu = 0.008) last resort; GC in old space requested
+
+#
+<--- Last few GCs --->
+#
+
+#
+<--- Last few GCs --->
+<--- Last few GCs --->
+<--- Last few GCs --->
+FATAL ERROR: Zone Allocation failed - process out of memory
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+[56028:00000260649CB000]     1674 ms: Scavenge 4.4 (6.6) -> 4.1 (7.1) MB, pooled: 0 MB, 1.78 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[4328:0000020B788A8000]     1936 ms: Scavenge 8.7 (12.6) -> 7.5 (12.3) MB, pooled: 0 MB, 31.93 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[7328:0000013FE777C000]     2437 ms: Scavenge 8.7 (11.6) -> 7.4 (11.3) MB, pooled: 0 MB, 84.28 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[10200:0000022ECF7EA000]     2097 ms: Scavenge 8.7 (12.1) -> 7.4 (11.8) MB, pooled: 0 MB, 1.71 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[89180:000002B51F7BA000]     1430 ms: Scavenge 8.7 (12.1) -> 7.4 (11.8) MB, pooled: 0 MB, 56.48 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[55544:000001D40F795000]     2202 ms: Scavenge 8.7 (11.8) -> 7.4 (11.3) MB, pooled: 0 MB, 56.38 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[75568:0000012714385000]     2109 ms: Scavenge 8.7 (11.8) -> 7.4 (11.3) MB, pooled: 0 MB, 57.39 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[1420:00000225FCE4D000]     2109 ms: Scavenge 8.7 (12.6) -> 7.4 (12.3) MB, pooled: 0 MB, 55.54 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+----- Native stack trace -----
+FATAL ERROR: MarkCompactCollector: young object promotion failed Allocation failed - JavaScript heap out of memory
+
+----- Native stack trace -----
+----- Native stack trace -----
+FATAL ERROR: NewSpace::EnsureCurrentCapacity Allocation failed - JavaScript heap out of memory
+
+
+
+----- Native stack trace -----
+----- Native stack trace -----
+
+[4328:0000020B788A8000]     3342 ms: Scavenge 9.4 (12.8) -> 8.7 (14.1) MB, pooled: 0 MB, 629.16 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[7328:0000013FE777C000]     3856 ms: Scavenge 9.4 (12.3) -> 8.8 (13.6) MB, pooled: 0 MB, 598.80 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[10200:0000022ECF7EA000]     3638 ms: Scavenge 9.4 (12.3) -> 8.7 (13.6) MB, pooled: 1 MB, 555.43 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[89180:000002B51F7BA000]     2978 ms: Scavenge 9.4 (12.6) -> 8.7 (13.6) MB, pooled: 0 MB, 562.72 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[55544:000001D40F795000]     3745 ms: Scavenge 9.4 (12.3) -> 8.8 (13.3) MB, pooled: 0 MB, 345.47 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[75568:0000012714385000]     3659 ms: Scavenge 9.4 (12.3) -> 8.7 (13.6) MB, pooled: 1 MB, 612.37 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[1420:00000225FCE4D000]     3651 ms: Scavenge 9.4 (13.1) -> 8.8 (14.1) MB, pooled: 0 MB, 320.40 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+
+----- Native stack trace -----
+[30044:0000022174547000]     2109 ms: Scavenge 8.7 (11.8) -> 7.3 (11.3) MB, pooled: 0 MB, 1.73 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+----- Native stack trace -----
+[76628:000001DCBA47B000]      202 ms: Scavenge 8.7 (11.8) -> 7.5 (11.5) MB, pooled: 0 MB, 1.36 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[71164:000002B88BEE6000]     2188 ms: Scavenge 8.7 (11.8) -> 7.4 (11.8) MB, pooled: 0 MB, 42.72 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[77060:000002AD13B1A000]      288 ms: Scavenge 8.7 (11.8) -> 7.4 (11.5) MB, pooled: 0 MB, 1.05 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+
+
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+
+
+
+
+
+----- Native stack trace -----
+ 1: 00007FF6626FC28D 
+
+[30044:0000022174547000]     3651 ms: Scavenge 9.4 (12.3) -> 8.8 (17.3) MB, pooled: 0 MB, 346.09 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 1: 00007FF6626FC28D 
+ 1: 00007FF6626FC28D 
+
+[76628:000001DCBA47B000]      313 ms: Scavenge 9.4 (12.1) -> 8.7 (17.6) MB, pooled: 0 MB, 1.82 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[71164:000002B88BEE6000]     3687 ms: Scavenge 9.4 (12.6) -> 8.8 (13.6) MB, pooled: 1 MB, 557.20 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[77060:000002AD13B1A000]      408 ms: Scavenge 9.4 (12.3) -> 8.8 (17.3) MB, pooled: 0 MB, 2.44 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+----- Native stack trace -----
+ 1: 00007FF6627A7F8F 
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+ 1: 00007FF6627A7F8F 
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+
+ 2: 00007FF663B49576 
+ 1: 00007FF6627A7F8F 
+
+ 2: 00007FF663B49576 
+ 2: 00007FF663B49576 
+ 1: 00007FF6627A7F8F 
+
+[71164:000002B88BEE6000]     4289 ms: Scavenge 10.6 (13.6) -> 9.7 (16.6) MB, pooled: 0 MB, 1.37 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+ 2: 00007FF6633EB1E7 
+ 2: 00007FF6633EB1E7 
+----- Native stack trace -----
+
+----- Native stack trace -----
+----- Native stack trace -----
+----- Native stack trace -----
+----- Native stack trace -----
+----- Native stack trace -----
+----- Native stack trace -----
+ 3: 00007FF6633EB1C6 
+ 2: 00007FF6633EB1E7 
+ 3: 00007FF6633EB1C6 
+ 3: 00007FF6633EB1C6 
+ 2: 00007FF6633EB1E7 
+ 1: 00007FF6627A7F8F 
+FATAL ERROR: Zone Allocation failed - process out of memory
+FATAL ERROR: Zone Allocation failed - process out of memory
+
+ 3: 00007FF662D65FC6 
+FATAL ERROR: Zone Allocation failed - process out of memory
+ 3: 00007FF6631EBA97 
+
+ 1: 00007FF6627A7F8F 
+
+
+
+
+
+
+ 4: 00007FF6632522AE 
+ 3: 00007FF6631EBA97 
+ 4: 00007FF6632522AE 
+ 4: 00007FF6632522AE 
+ 3: 00007FF6631EBA97 
+ 2: 00007FF6633EB1E7 
+----- Native stack trace -----
+----- Native stack trace -----
+ 4: 00007FF662E94939 
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+ 4: 00007FF6631844BB 
+ 1: 00007FF6627A7F8F 
+ 2: 00007FF6633EB1E7 
+ 1: 00007FF6627A7F8F 
+ 1: 00007FF6627A7F8F 
+ 1: 00007FF6627A7F8F 
+ 1: 00007FF6627A7F8F 
+ 1: 00007FF6627A7F8F 
+
+ 1: 00007FF6627A7F8F 
+
+ 5: 00007FF6632857BF 
+ 4: 00007FF6631CB3AE 
+ 5: 00007FF6632857BF 
+ 5: 00007FF6632857BF 
+ 4: 00007FF6631AC533 
+ 3: 00007FF6631EBA97 
+
+
+ 5: 00007FF662EB8A73 
+----- Native stack trace -----
+
+ 5: 00007FF66315BF0E 
+ 2: 00007FF6633EB1E7 
+ 3: 00007FF6631EBA97 
+ 2: 00007FF6633EB1E7 
+ 2: 00007FF6633EB1E7 
+ 2: 00007FF6633EB1E7 
+ 2: 00007FF6633EB1E7 
+ 3: 00007FF6631EBA97 
+<--- Last few GCs --->
+ 2: 00007FF6633EB1E7 
+<--- Last few GCs --->
+ 6: 00007FF663286272 
+ 5: 00007FF6631C0A6D 
+ 6: 00007FF663286272 
+ 6: 00007FF663286272 
+ 5: 00007FF6631EDE9A 
+ 4: 00007FF6631844BB 
+ 1: 00007FF6627A7F8F 
+ 6: 00007FF662E98EE4 
+
+ 1: 00007FF6627A7F8F 
+ 6: 00007FF6631EE532 
+ 3: 00007FF6631EBA97 
+ 4: 00007FF6631844BB 
+ 3: 00007FF6631EBA97 
+ 3: 00007FF6631EBA97 
+
+
+ 3: 00007FF6631EBA97 
+ 2: 00007FF6633EB1E7 
+ 3: 00007FF6631EBA97 
+
+ 3: 00007FF6631EBA97 
+
+
+
+
+ 7: 00007FF663286C52 
+ 6: 00007FF6631C071C 
+ 7: 00007FF6631C0361 
+ 7: 00007FF663286C52 
+ 6: 00007FF6631ED4C6 
+ 5: 00007FF66315BF0E 
+ 2: 00007FF6633EB1E7 
+ 7: 00007FF662EA197B 
+ 1: 00007FF6627A7F8F 
+ 2: 00007FF6633EB1E7 
+ 7: 00007FF6631ED4E7 
+ 4: 00007FF6631844BB 
+ 5: 00007FF6631AC82A 
+ 4: 00007FF6631844BB 
+ 4: 00007FF6631844BB 
+<--- Last few GCs --->
+<--- Last few GCs --->
+ 4: 00007FF6631844BB 
+ 4: 00007FF6631844BB 
+
+
+ 4: 00007FF6631844BB 
+[49524:000001FF020E7000]      266 ms: Scavenge 8.7 (11.8) -> 7.4 (11.5) MB, pooled: 0 MB, 1.60 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 4: 00007FF6631844BB 
+[89300:0000022AF64A4000]      162 ms: Scavenge 8.7 (12.1) -> 7.4 (11.8) MB, pooled: 0 MB, 1.09 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+<--- Last few GCs --->
+<--- Last few GCs --->
+<--- Last few GCs --->
+ 8: 00007FF662D841B3 
+ 7: 00007FF663286C52 
+ 8: 00007FF662D841B3 
+ 8: 00007FF662D841B3 
+ 7: 00007FF6631FE452 
+ 6: 00007FF6631EE532 
+ 3: 00007FF662D65FC6 
+ 8: 00007FF662EA0E7A 
+ 2: 00007FF6633EB1E7 
+ 3: 00007FF662D65FC6 
+ 8: 00007FF6631FE452 
+ 5: 00007FF66315BF0E 
+ 6: 00007FF6631EDE76 
+ 5: 00007FF66315BF0E 
+ 5: 00007FF66315BF0E 
+
+
+ 5: 00007FF66315BF0E 
+ 5: 00007FF66315BF0E 
+<--- Last few GCs --->
+<--- Last few GCs --->
+ 5: 00007FF66315BF0E 
+
+ 5: 00007FF66315BF0E 
+[89300:0000022AF64A4000]      243 ms: Scavenge 9.4 (12.6) -> 8.8 (17.3) MB, pooled: 0 MB, 4.83 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+[89032:000001618DC45000]      136 ms: Scavenge 5.9 (7.4) -> 5.3 (10.2) MB, pooled: 0 MB, 1.22 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+ 9: 00007FF6634163A6 
+ 8: 00007FF6631D2648 
+
+ 9: 00007FF6634163A6 
+ 9: 00007FF6634163A6 
+ 8: 00007FF6631FDF7B 
+ 7: 00007FF6631ED4E7 
+ 4: 00007FF66292728A 
+ 9: 00007FF662E94577 
+ 3: 00007FF662D65FC6 
+ 4: 00007FF66292728A 
+ 9: 00007FF6631FDF7B 
+ 6: 00007FF6631EE532 
+ 7: 00007FF6631ED4C6 
+ 6: 00007FF6631EE532 
+ 6: 00007FF6631EE532 
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+ 6: 00007FF6631EE532 
+[89644:000001DC5AA36000]       70 ms: Scavenge 5.9 (7.7) -> 5.3 (10.4) MB, pooled: 0 MB, 1.18 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[8396:000001B487269000]       64 ms: Scavenge 5.9 (7.2) -> 5.3 (9.9) MB, pooled: 0 MB, 0.97 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 6: 00007FF6631EE532 
+ 6: 00007FF6631EE532 
+
+[89760:000001C554756000]      360 ms: Scavenge 8.7 (11.8) -> 7.4 (11.5) MB, pooled: 0 MB, 2.30 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+[89732:0000023A5D966000]      328 ms: Scavenge 8.7 (11.8) -> 7.4 (11.5) MB, pooled: 0 MB, 1.34 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+10: 00007FF6628B0A3D 
+ 9: 00007FF663BBCA6D 
+FATAL ERROR: NewSpace::EnsureCurrentCapacity Allocation failed - JavaScript heap out of memory
+
+10: 00007FF6628B0A3D 
+10: 00007FF6628B0A3D 
+ 9: 00007FF664665D2D 
+ 8: 00007FF6631FE452 
+ 5: 00007FF662B55AFD 
+10: 00007FF662E93744 
+ 4: 00007FF6630F9C6B 
+ 5: 00007FF662929551 
+10: 00007FF664665D2D 
+ 7: 00007FF6631ED4E7 
+ 8: 00007FF6631FE452 
+
+
+
+ 7: 00007FF6631ED4E7 
+ 7: 00007FF6631ED4E7 
+----- Native stack trace -----
+ 6: 00007FF6631EE532 
+ 7: 00007FF6631ED4E7 
+ 7: 00007FF6631ED4E7 
+
+
+ 7: 00007FF6631ED4E7 
+ 7: 00007FF6631ED4E7 
+FATAL ERROR: Zone Allocation failed - process out of memory
+[89760:000001C554756000]      451 ms: Scavenge 9.4 (12.1) -> 8.7 (17.3) MB, pooled: 0 MB, 1.78 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+FATAL ERROR: Zone Allocation failed - process out of memory
+[89732:0000023A5D966000]      430 ms: Scavenge 9.4 (12.3) -> 8.7 (17.6) MB, pooled: 0 MB, 9.57 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+11: 00007FF662612B84 
+10: 00007FF663BBCD82 
+----- Native stack trace -----
+#
+11: 00007FF662612B84 
+11: 00007FF662612B84 
+10: 00007FF6631E9560 
+ 9: 00007FF6631FDF7B 
+ 6: 00007FF662B55CA7 
+11: 00007FF662E92A32 
+ 5: 00007FF6630E4CC7 
+ 6: 00007FF663FBFBFC 
+11: 00007FF6631E9560 
+ 8: 00007FF6631FE452 
+ 9: 00007FF6631FDF7B 
+
+<--- Last few GCs --->
+<--- Last few GCs --->
+ 8: 00007FF6631FE452 
+ 8: 00007FF6631FE452 
+
+
+ 8: 00007FF6631FE452 
+ 8: 00007FF6631FE452 
+ 8: 00007FF6631FE452 
+FATAL ERROR: NewSpace::EnsureCurrentCapacity Allocation failed - JavaScript heap out of memory
+ 8: 00007FF6631FE452 
+----- Native stack trace -----
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+
+12: 00007FF662611F19 
+11: 00007FF6631C33A4 
+
+# Fatal process out of memory: Re-embedded builtins: set permissions
+12: 00007FF662611F19 
+12: 00007FF662611F19 
+11: 00007FF663203DEA 
+10: 00007FF664665D2D 
+ 7: 00007FF662B53EBB 
+12: 00007FF662E926DA 
+ 6: 00007FF6630DEC8E 
+ 7: 00007FF6630DEB41 
+12: 00007FF663203DEA 
+ 9: 00007FF6631FDF7B 
+10: 00007FF664665D2D 
+#
+
+
+ 9: 00007FF6631FDF7B 
+ 9: 00007FF6631FDF7B 
+ 1: 00007FF6627A7F8F 
+ 1: 00007FF6627A7F8F 
+ 9: 00007FF6631FDF7B 
+ 9: 00007FF6631FDF7B 
+ 9: 00007FF6631FDF7B 
+----- Native stack trace -----
+ 9: 00007FF6631FDF7B 
+
+----- Native stack trace -----
+FATAL ERROR: Zone Allocation failed - process out of memory
+
+FATAL ERROR: MarkCompactCollector: young object promotion failed Allocation failed - JavaScript heap out of memory
+13: 00007FF66261BE00 
+12: 00007FF6631AAACD 
+ 1: 00007FF6627A7F8F 
+#
+13: 00007FF66261BE00 
+13: 00007FF66261BE00 
+12: 00007FF66320FBC8 
+11: 00007FF6631E9560 
+ 8: 00007FF662B5326A 
+13: 00007FF662E8DD09 
+ 7: 00007FF663FBBA1A 
+ 8: 00007FF663FBB5D9 
+13: 00007FF663210206 
+10: 00007FF664665D2D 
+11: 00007FF6631E9560 
+# Fatal process out of memory: Re-embedded builtins: set permissions
+
+[77804:000002776DB05000]      145 ms: Scavenge 8.7 (11.8) -> 7.4 (11.5) MB, pooled: 0 MB, 1.22 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+10: 00007FF664665D2D 
+10: 00007FF664665D2D 
+ 2: 00007FF6633EB1E7 
+ 2: 00007FF6633EB1E7 
+10: 00007FF664665D2D 
+10: 00007FF664665D2D 
+10: 00007FF664665D2D 
+
+10: 00007FF664665D2D 
+ 1: 00007FF6627A7F8F node::OnFatalError+1343
+
+----- Native stack trace -----
+ 1: 00007FF6627A7F8F 
+----- Native stack trace -----
+14: 00007FF663440556 
+13: 00007FF6631A4B44 
+ 2: 00007FF6633EB1E7 
+----- Native stack trace -----
+14: 00007FF663440556 
+14: 00007FF663440556 
+12: 00007FF663203DEA 
+ 9: 00007FF662B52598 
+13: 00007FF663229755 
+14: 00007FF663229675 
+ 8: 00007FF6630DB47B 
+
+
+ 9: 00007FF663FC5DC9 
+14: 00007FF662DE3137 
+11: 00007FF6631E9560 
+12: 00007FF66320FC46 
+
+
+11: 00007FF6631E9560 
+11: 00007FF6631E9560 
+ 3: 00007FF6631EBA97 
+ 3: 00007FF6631EBA97 
+11: 00007FF6631E9560 
+11: 00007FF6631E9560 
+11: 00007FF6631E9560 
+#
+ 1: 00007FF6627A7F8F node::OnFatalError+1343
+11: 00007FF6631E9560 
+ 2: 00007FF6633EB1E7 v8::Function::NewInstance+423
+ 1: 00007FF6627A7F8F node::OnFatalError+1343
+
+ 2: 00007FF6633EB1E7 
+
+15: 00007FF6646814F3 
+14: 00007FF6631EDE9A 
+ 3: 00007FF6631EBA97 
+
+15: 00007FF6646814F3 
+15: 00007FF6646814F3 
+13: 00007FF66320FBC8 
+14: 00007FF663368BDF 
+10: 00007FF662B51227 
+15: 00007FF66336B9E1 
+ 9: 00007FF6630DB07D 
+<--- Last few GCs --->
+<--- Last few GCs --->
+10: 00007FF663FC4A92 
+15: 0000023F9FE7733A 
+12: 00007FF663203DEA 
+
+13: 00007FF66322BAB2 
+<--- Last few GCs --->
+12: 00007FF663203DEA 
+12: 00007FF663203DEA 
+ 4: 00007FF6631844BB 
+FATAL ERROR: Zone Allocation failed - process out of memory
+ 4: 00007FF6631844BB 
+12: 00007FF663203DEA 
+12: 00007FF663203DEA 
+12: 00007FF663203DEA 
+----- Native stack trace -----
+ 2: 00007FF6633EB1E7 v8::Function::NewInstance+423
+12: 00007FF663203DEA 
+ 3: 00007FF662D65FC6 v8::SnapshotCreator::GetIsolate+56566
+ 2: 00007FF6633EB1E7 v8::Function::NewInstance+423
+ 1: 00007FF6627A7F8F 
+ 3: 00007FF662D65FC6 
+
+16: 00007FFFE56B259D 
+15: 00007FF6631ED4C6 
+ 4: 00007FF6631AC533 
+ 1: 00007FF6626FC28D node::MultiIsolatePlatform::DisposeIsolate+5341
+16: 00007FFFE56B259D 
+16: 00007FFFE56B259D 
+15: 00007FF66335E740 
+14: 00007FF66322756C 
+11: 00007FF662C3E9E1 
+
+16: 00007FF6633F46A3 
+10: 00007FF6630DAC6F 
+[89488:000002529F9D0000]       59 ms: Scavenge 5.9 (7.2) -> 5.3 (9.9) MB, pooled: 0 MB, 1.18 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[76272:0000021411BCC000]       69 ms: Scavenge 5.9 (7.4) -> 5.3 (10.2) MB, pooled: 0 MB, 1.75 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+11: 00007FF663FBFE17 
+13: 00007FF66320FBC8 
+#
+14: 00007FF662EF20A0 
+# Fatal JavaScript out of memory: MemoryChunk allocation failed during deserialization.
+17: 00007FF6627D6460 
+13: 00007FF66320FBC8 
+ 5: 00007FF66315BF0E 
+----- Native stack trace -----
+ 5: 00007FF6631AC82A 
+13: 00007FF66320FBC8 
+13: 00007FF663210206 
+13: 00007FF66320FBC8 
+ 3: 00007FF6631EBA97 v8::base::AddressSpaceReservation::AddressSpaceReservation+322071
+
+13: 00007FF663210206 
+ 4: 00007FF663D6B690 v8::base::DiyFp::Multiply+40368
+ 3: 00007FF662D65FC6 v8::SnapshotCreator::GetIsolate+56566
+ 2: 00007FF6633EB1E7 
+ 4: 00007FF6633E89E4 
+<--- Last few GCs --->
+17: 00007FFFE5B4AF78 
+16: 00007FF6631FE452 
+ 5: 00007FF6631EDE9A 
+ 2: 00007FF663B49576 v8::base::FatalOOM+54
+17: 00007FFFE5B4AF78 RtlUserThreadStart+40
+17: 00007FFFE5B4AF78 
+16: 00007FF6630D93D5 
+15: 00007FF663227505 
+12: 00007FF662C3BBBA 
+<--- Last few GCs --->
+13: 00007FF66320FBC8 
+11: 00007FF6630D1F16 
+
+
+12: 00007FF663FBEFA1 
+14: 00007FF66322AD84 
+
+15: 00007FF6633D014A 
+
+
+#
+14: 00007FF66322AED5 
+14: 00007FF66322AED5 
+ 6: 00007FF6631EE532 
+
+ 6: 00007FF6631EDE76 
+14: 00007FF66322AED5 
+14: 00007FF662DE3137 
+14: 00007FF66322707C 
+ 1: 00007FF6626FC28D node::MultiIsolatePlatform::DisposeIsolate+5341
+ 4: 00007FF6631AC533 v8::base::AddressSpaceReservation::AddressSpaceReservation+62643
+14: 00007FF662DE3137 
+ 5: 00007FF663B94989 v8::internal::compiler::CompilationDependencies::FieldTypeDependencyOffTheRecord+107193
+ 4: 00007FF662EBC801 EC_KEY_METHOD_set_verify+389185
+ 3: 00007FF662D65FC6 
+ 5: 00007FF6633E87A0 
+
+17: 00007FF6631FDF7B 
+ 6: 00007FF6631ED4C6 
+ 3: 00007FF6633EB1C6 v8::Function::NewInstance+390
+17: 00007FF6630D90C6 
+16: 00007FF662F09BD5 
+13: 00007FF66335EE6F 
+
+18: 00007FF6627D7012 
+12: 00007FF66336FF2F 
+FATAL ERROR: Zone Allocation failed - process out of memory
+FATAL ERROR: Zone Allocation failed - process out of memory
+13: 00007FF663FBBAEE 
+15: 00007FF66322AC5C 
+16: 00007FF6633D0801 
+<--- Last few GCs --->
+<--- Last few GCs --->
+----- Native stack trace -----
+
+15: 00007FF66322AE3C 
+15: 00007FF66322AE3C 
+ 7: 00007FF6631ED4E7 
+ 1: 00007FF6627A7F8F node::OnFatalError+1343
+ 7: 00007FF6631ED4C6 
+15: 00007FF66322AE3C 
+15: 000002B557EF733A 
+ 2: 00007FF663B49576 v8::base::FatalOOM+54
+15: 00007FF662F3E1BC 
+ 5: 00007FF6631EDE9A v8::base::AddressSpaceReservation::AddressSpaceReservation+331290
+15: 00000225B7E7733A 
+ 6: 00007FF662C5DF76 X509_ACERT_get0_notBefore+1782
+ 5: 00007FF662EAD45C EC_KEY_METHOD_set_verify+326812
+ 4: 00007FF6630E63C6 
+ 6: 00007FF662E70EDF 
+[89732:0000023A5D966000]      328 ms: Scavenge 8.7 (11.8) -> 7.4 (11.5) MB, pooled: 0 MB, 1.34 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+18: 00007FF664665D2D 
+ 7: 00007FF6631FE452 
+ 4: 00007FF6632522AE v8::CppHeap::CollectGarbageInYoungGenerationForTesting+111438
+18: 00007FF6630D22AF 
+17: 00007FF6632117DE 
+14: 00007FF662C3D69B 
+19: 00007FF6627D9096 
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+13: 00007FF663366848 
+----- Native stack trace -----
+----- Native stack trace -----
+14: 00007FF663FBB5D9 
+16: 00007FF66294F02E 
+17: 00007FF66336676E 
+[79584:0000028952895000]       54 ms: Scavenge 5.9 (7.2) -> 5.3 (9.9) MB, pooled: 0 MB, 0.88 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+
+16: 00007FF663211D19 
+16: 00007FF663211D19 
+ 8: 00007FF6631FE452 
+ 2: 00007FF6633EB1E7 v8::Function::NewInstance+423
+ 8: 00007FF6631FE452 
+16: 00007FF663211D19 
+16: 00007FF662F3C1EF 
+ 3: 00007FF6633EB1C6 v8::Function::NewInstance+390
+ 6: 00007FF6631ED4C6 v8::base::AddressSpaceReservation::AddressSpaceReservation+328774
+ 7: 00007FF662C3B86F SSL_CTX_get_client_CA_list+714495
+ 6: 00007FF662EA81FB EC_KEY_METHOD_set_verify+305723
+ 5: 00007FF6630E695D 
+ 7: 00007FF662E85194 
+[89732:0000023A5D966000]      430 ms: Scavenge 9.4 (12.3) -> 8.7 (17.6) MB, pooled: 0 MB, 9.57 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+19: 00007FF6631E9560 
+ 8: 00007FF6631FDF7B 
+ 5: 00007FF6632857BF SSL_CTX_set_default_read_buffer_len+41247
+19: 00007FF6630D2122 
+18: 00007FF662F99BDB 
+15: 00007FF663BBD14F 
+20: 0000015E4FDCF64D 
+----- Native stack trace -----
+14: 00007FF663368FE4 
+
+
+
+
+15: 00007FF663FBB094 
+17: 00007FF662DC1746 
+18: 00007FF66336607D 
+
+[89824:00000265E9FFA000]       68 ms: Mark-Compact 7.4 (10.7) -> 6.0 (11.2) MB, pooled: 0 MB, 3.47 / 0.00 ms  (average mu = 0.948, current mu = 0.948) background allocation failure; GC in old space requested
+ 1: 00007FF6626FC28D 
+#
+17: 00007FF663211F12 
+17: 00007FF663211F12 
+ 9: 00007FF6631FDF7B 
+ 3: 00007FF662D65FC6 v8::SnapshotCreator::GetIsolate+56566
+ 9: 00007FF6631FDF7B 
+17: 00007FF663211F12 
+17: 00007FF662F3B94D 
+ 4: 00007FF6632522AE v8::CppHeap::CollectGarbageInYoungGenerationForTesting+111438
+ 7: 00007FF6631FE452 v8::internal::StrongRootAllocatorBase::deallocate_impl+15858
+ 8: 00007FF6633674E3 EVP_MD_CTX_set_update_fn+234979
+ 7: 00007FF662EA73CE EC_KEY_METHOD_set_verify+302094
+ 6: 00007FF6630EE329 
+ 8: 00007FF662E77CD6 
+
+20: 00007FF663203DEA 
+ 9: 00007FF664665D2D 
+ 6: 00007FF663286272 SSL_CTX_set_default_read_buffer_len+43986
+20: 00007FF66336EE2C 
+
+19: 00007FF662F328A4 
+16: 00007FF6626F814E 
+
+15: 00007FF66336B9E1 
+
+<--- Last few GCs --->
+ 1: 00007FF6627A7F8F 
+ 1: 00007FF6627A7F8F 
+16: 00007FF663FBA621 
+18: 0000020B37E7733A 
+19: 00007FF663366B0C 
+FATAL ERROR: Zone Allocation failed - process out of memory
+[89824:00000265E9FFA000]      131 ms: Scavenge (interleaved) 10.1 (12.8) -> 8.9 (12.8) MB, pooled: 2 MB, 0.92 / 0.00 ms  (average mu = 0.948, current mu = 0.948) allocation failure; 
+ 2: 00007FF663B49576 
+# Fatal JavaScript out of memory: MemoryChunk allocation failed during deserialization.
+18: 00007FF6633EAFE2 
+18: 00007FF6633EAFE2 
+10: 00007FF664665D2D 
+ 4: 00007FF66292728A X509_get0_tbs_sigalg+9818
+10: 00007FF664665D2D 
+18: 00007FF6633EAFE2 
+18: 00007FF662F3980A 
+ 5: 00007FF6632857BF SSL_CTX_set_default_read_buffer_len+41247
+ 8: 00007FF6631FDF7B v8::internal::StrongRootAllocatorBase::deallocate_impl+14619
+ 9: 00007FF6633695BA EVP_MD_CTX_set_update_fn+243386
+ 8: 00007FF662EA8562 EC_KEY_METHOD_set_verify+306594
+ 7: 00007FF6630DF7D5 
+ 9: 00007FF662E840EB 
+FATAL ERROR: MarkCompactCollector: young object promotion failed Allocation failed - JavaScript heap out of memory
+21: 00007FF66320FBC8 
+10: 00007FF6631E9560 
+ 7: 00007FF663286C52 SSL_CTX_set_default_read_buffer_len+46514
+21: 00007FF6633668C1 
+<--- Last few GCs --->
+20: 00007FF662F923FA 
+17: 00007FF663440556 
+ 1: 00007FF6627A7F8F 
+16: 00007FF6633F46A3 
+#
+
+ 2: 00007FF6633EB1E7 
+ 2: 00007FF6633EB1E7 
+17: 00007FF663FBA37F 
+20: 00007FF662DEA1AB 
+----- Native stack trace -----
+
+ 3: 00007FF6633EB1C6 
+#
+19: 00007FF662782875 
+19: 00007FF662782875 
+11: 00007FF6631E9560 
+ 5: 00007FF6630DED06 v8::Promise::MarkAsSilent+574966
+11: 00007FF6631E9560 
+19: 00007FF662782875 
+19: 00007FF662F3979F 
+ 6: 00007FF663286272 SSL_CTX_set_default_read_buffer_len+43986
+ 9: 00007FF664665D2D v8::base::UnsignedDivisionByConstant<unsigned __int64>+2791341
+10: 00007FF662DEC661 v8::String::Value::~Value+181681
+ 9: 00007FF662EA73F0 EC_KEY_METHOD_set_verify+302128
+ 8: 00007FF6630DCFEB 
+10: 00007FF662E78682 
+----- Native stack trace -----
+22: 00007FF663229755 
+11: 00007FF66320ECF0 
+ 8: 00007FF662D841B3 v8::internal::Version::GetSONAME+122307
+22: 00007FF663368FE4 
+[86092:000001FC91A5A000]       50 ms: Scavenge 5.9 (7.2) -> 5.3 (9.9) MB, pooled: 0 MB, 0.79 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+21: 00007FF662F91B80 
+18: 00007FF6646814F3 
+ 2: 00007FF6633EB1E7 
+17: 00007FF6627C3823 
+# Fatal process out of memory: Re-embedded builtins: set permissions
+[82428:000001FD7FEF9000]       87 ms: Scavenge 8.7 (11.8) -> 7.4 (11.5) MB, pooled: 0 MB, 1.00 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 3: 00007FF662D65FC6 
+[82428:000001FD7FEF9000]      122 ms: Scavenge 9.4 (12.3) -> 8.8 (17.3) MB, pooled: 0 MB, 1.22 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+18: 00007FF663DC6DB6 
+21: 000002603FE7733A 
+
+ 4: 00007FF6631EBA97 
+----- Native stack trace -----
+20: 0000013FA7DCF64D 
+FATAL ERROR: Zone Allocation failed - process out of memory
+20: 0000022E9FDCF64D 
+12: 00007FF663203DEA 
+ 6: 00007FF6630E5A59 v8::Promise::MarkAsSilent+602953
+12: 00007FF66320FC11 
+20: 000001D44764F64D 
+20: 00007FF662DD6F5A 
+ 7: 00007FF663286C52 SSL_CTX_set_default_read_buffer_len+46514
+10: 00007FF6631E9560 v8::base::AddressSpaceReservation::AddressSpaceReservation+312544
+11: 00007FF662DEA75F v8::String::Value::~Value+173743
+10: 00007FF662EACD94 EC_KEY_METHOD_set_verify+325076
+ 9: 00007FF6630DC45F 
+11: 00007FF662E89929 
+
+23: 00007FF663229675 
+12: 00007FF663213B74 
+ 9: 00007FF6634163A6 v8::Isolate::Initialize+662
+23: 00007FF66336B9E1 
+
+22: 00007FF662F90E2D 
+19: 00007FFFE56B259D 
+ 3: 00007FF6631EBA97 
+18: 00007FF6627C1FBD 
+ 3: 00007FF662D65FC6 
+#
+ 4: 00007FF6628F420E 
+ 4: 00007FF6633E89E4 
+19: 00007FF663DBF626 
+ 1: 00007FF6627A7F8F node::OnFatalError+1343
+ 5: 00007FF66319DCEA 
+
+----- Native stack trace -----
+13: 00007FF663210206 
+ 1: 00007FF6626FC28D 
+13: 00007FF66322AD84 
+21: 000001274C2B733A 
+ 8: 00007FF662D841B3 v8::internal::Version::GetSONAME+122307
+11: 00007FF66320FC46 uv_timer_set_repeat+19094
+12: 0000022AAFE7733A 
+11: 00007FF662EAD61A EC_KEY_METHOD_set_verify+327258
+10: 00007FF6630DAC6F 
+12: 00007FF662E85BA9 
+ 1: 00007FF6627A7F8F 
+24: 00007FF66335E740 
+13: 00007FF66340C07F 
+10: 00007FF6628B0A3D node::SetIsolateUpForNode+669
+24: 00007FF6633F46A3 
+FATAL ERROR: AlignedAlloc Allocation failed - process out of memory
+23: 00007FF662F90B94 
+20: 00007FFFE5B4AF78 
+ 4: 00007FF6631844BB 
+19: 000002B8C3D8F64D 
+
+----- Native stack trace -----
+ 5: 00007FF662E2C598 
+
+
+
+ 5: 00007FF6633E87A0 
+20: 00007FF663DBEAA0 
+ 2: 00007FF6633EB1E7 v8::Function::NewInstance+423
+ 6: 00007FF66319DDAC 
+ 7: 00007FF6630E6AAB v8::Promise::MarkAsSilent+607131
+
+14: 00007FF662DE3137 
+ 8: 00007FF6630EE329 v8::Promise::MarkAsSilent+637977
+14: 00007FF66322AC5C 
+12: 00007FF663228CC1 uv_timer_set_repeat+121617
+ 9: 00007FF6634163A6 v8::Isolate::Initialize+662
+12: 00007FF662EA81FB EC_KEY_METHOD_set_verify+305723
+11: 00007FF6630D1F16 
+13: 00007FF662E78936 
+ 2: 00007FF6633EB1E7 
+25: 00007FF6630D93D5 
+14: 00007FF6625C541F 
+11: 00007FF662612B84 RSA_meth_get_flags+212292
+25: 00007FF6627D6460 
+----- Native stack trace -----
+24: 00007FF662F90627 
+ 5: 00007FF66315BF0E 
+FATAL ERROR: Zone Allocation failed - process out of memory
+
+ 6: 00007FF662E2C3A5 
+<--- Last few GCs --->
+<--- Last few GCs --->
+<--- Last few GCs --->
+ 6: 00007FF662E70EDF 
+21: 00007FF66335EE6F 
+ 3: 00007FF662D65FC6 v8::SnapshotCreator::GetIsolate+56566
+ 7: 00007FF66319E69B 
+ 2: 00007FF663B49576 
+15: 000001F447E7733A 
+
+
+
+ 9: 00007FF6630DF7D5 v8::Promise::MarkAsSilent+577733
+15: 00007FF662FDEBA7 
+10: 00007FF6628B0A3D node::SetIsolateUpForNode+669
+13: 00007FF663223956 uv_timer_set_repeat+100262
+13: 00007FF662EA73CE EC_KEY_METHOD_set_verify+302094
+12: 00007FF66336FF2F 
+14: 00007FF662E77F0D 
+ 3: 00007FF6631EBA97 
+26: 00007FF6630D90C6 
+15: 00007FF6627D592D 
+12: 00007FF662611F19 RSA_meth_get_flags+209113
+26: 00007FF6627D7012 
+
+25: 00007FF662F90398 
+ 6: 00007FF6631EE532 
+----- Native stack trace -----
+ 1: 00007FF6626FC28D 
+ 7: 00007FF662E1A359 
+[14092:000001E1C7395000]       64 ms: Scavenge 5.9 (7.2) -> 5.3 (9.9) MB, pooled: 0 MB, 1.19 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+ 7: 00007FF662E91B06 
+22: 00007FF663323EFD 
+ 4: 00007FF66295E2A1 v8::V8::GetVersion+165025
+ 8: 00007FF6631758F1 
+ 3: 00007FF6633EB1C6 
+<--- Last few GCs --->
+<--- Last few GCs --->
+
+10: 00007FF6630DDA4B v8::Promise::MarkAsSilent+570171
+16: 00007FF6633A1C74 
+11: 00007FF662612B84 RSA_meth_get_flags+212292
+14: 00007FF66322387B uv_timer_set_repeat+100043
+14: 00007FF662EA17B2 EC_KEY_METHOD_set_verify+278514
+13: 00007FF663366848 
+15: 00007FF662E840EB 
+ 4: 00007FF6631CB3AE 
+27: 00007FF6630D22AF 
+16: 00007FF6627D5B15 
+13: 00007FF66261BE00 RSA_meth_get_flags+249792
+27: 00007FF6627D9096 
+ 1: 00007FF6627A7F8F 
+26: 00007FF66339F506 
+ 7: 00007FF6631ED4E7 
+
+ 2: 00007FF663B49576 
+ 8: 00007FF662E18685 
+
+[69776:00000238E4B80000]       93 ms: Scavenge 8.7 (11.8) -> 7.4 (11.3) MB, pooled: 0 MB, 1.32 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[9912:000001C792B26000]      141 ms: Scavenge 8.7 (11.8) -> 7.4 (11.5) MB, pooled: 0 MB, 1.30 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 8: 00007FF662EA81FB 
+23: 00007FF663323BF5 
+ 5: 00007FF662E2C71D v8::base::CPU::has_bmi2+21053
+
+ 9: 00007FF6631DB7A3 
+ 4: 00007FF6631EBA97 
+[52812:0000027C90379000]       57 ms: Scavenge 5.9 (7.2) -> 5.3 (9.9) MB, pooled: 0 MB, 1.05 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+#
+11: 00007FF6630DDDD0 v8::Promise::MarkAsSilent+571072
+17: 00000191E047727A 
+12: 00007FF662611F19 RSA_meth_get_flags+209113
+15: 00007FF662DF383B v8::PropertyDescriptor::value+1179
+15: 00007FF662E97345 EC_KEY_METHOD_set_verify+236421
+14: 00007FF663368FE4 
+16: 00007FF662E78682 
+15: 00007FF66336B9E1 
+28: 00007FF6630D2122 
+17: 00007FF6627D7012 
+14: 00007FF663440556 uv_thread_detach+150
+28: 000001B29FDCF64D 
+ 2: 00007FF6633EB1E7 
+27: 0000020D3DFF727A 
+ 8: 00007FF6631FE452 
+ 1: 00007FF6627A7F8F 
+ 3: 00007FF6633EB1C6 
+ 9: 00007FF662E1A5F2 
+[69776:00000238E4B80000]      147 ms: Scavenge 9.4 (12.1) -> 8.8 (17.3) MB, pooled: 0 MB, 2.09 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[9912:000001C792B26000]      184 ms: Scavenge 8.8 (11.8) -> 8.2 (13.0) MB, pooled: 0 MB, 2.05 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 9: 00007FF662EA73CE 
+FATAL ERROR: NewSpace::EnsureCurrentCapacity Allocation failed - JavaScript heap out of memory
+24: 00007FF663BBD14F 
+ 6: 00007FF662E12C02 v8::base::CPU::family+40514
+<--- Last few GCs --->
+10: 00007FF6631DB50E 
+ 5: 00007FF66319DCEA 
+
+[59756:000002121BA6D000]      112 ms: Scavenge 8.7 (12.1) -> 7.4 (11.5) MB, pooled: 0 MB, 2.00 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+# Fatal process out of memory: Re-embedded builtins: set permissions
+12: 00007FF6630DCFEB v8::Promise::MarkAsSilent+567515
+13: 00007FF66261BE00 RSA_meth_get_flags+249792
+16: 00007FF662F881FD v8::RegExp::GetFlags+598477
+16: 00007FF662EA80F0 EC_KEY_METHOD_set_verify+305456
+ 5: 00007FF6631C0A6D 
+17: 00007FF662E89929 
+ 6: 00007FF6631C071C 
+29: 00007FF66336EE2C 
+18: 00007FF6627D9096 
+15: 00007FF6646814F3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2903923
+ 3: 00007FF662D68F0E 
+ 9: 00007FF6631FDF7B 
+ 2: 00007FF6633EB1E7 
+ 4: 00007FF6632522AE 
+10: 00007FF662E19D78 
+
+
+10: 00007FF662EA7089 
+----- Native stack trace -----
+25: 00007FF6626F814E 
+ 7: 00007FF662E13591 v8::base::CPU::family+42961
+[88956:0000023715B3F000]       71 ms: Scavenge 5.9 (7.2) -> 5.3 (9.9) MB, pooled: 0 MB, 1.00 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+11: 00007FF6631DA2F8 
+
+ 6: 00007FF66319DDAC 
+[59756:000002121BA6D000]      192 ms: Scavenge 9.4 (12.3) -> 8.7 (13.3) MB, pooled: 0 MB, 29.46 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+FATAL ERROR: Zone Allocation failed - process out of memory
+#
+13: 00007FF6630DC45F v8::Promise::MarkAsSilent+564559
+14: 00007FF663440556 uv_thread_detach+150
+17: 00007FF662F88DEF v8::RegExp::GetFlags+601535
+17: 00007FF662EA7414 EC_KEY_METHOD_set_verify+302164
+16: 00007FF6633F46A3 
+18: 00007FF662E85BA9 
+ 7: 00007FF6631C0361 
+30: 00007FF6633668C1 
+19: 000001FF39F8F64D 
+16: 00007FFFE56B259D BaseThreadInitThunk+29
+ 4: 00007FF662EE2FAB 
+10: 00007FF664665D2D 
+ 3: 00007FF662D65FC6 
+ 5: 00007FF6632857BF 
+11: 00007FF662E18619 
+11: 00007FF662EAF850 
+
+26: 00007FF663440556 
+FATAL ERROR: Zone Allocation failed - process out of memory
+ 8: 00007FF662E13F90 v8::base::CPU::family+45520
+
+12: 00007FF6631DA27A 
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+<--- Last few GCs --->
+ 7: 00007FF66319E69B 
+
+----- Native stack trace -----
+----- Native stack trace -----
+14: 00007FF6630DAC6F v8::Promise::MarkAsSilent+558431
+15: 00007FF6646814F3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2903923
+18: 00007FF662DCFCC5 v8::String::Value::~Value+64533
+18: 00007FF662EADC32 EC_KEY_METHOD_set_verify+328818
+17: 00007FF6627C3823 
+19: 00007FF662E78936 
+ 8: 00007FF6631D2858 
+31: 00007FF663368FE4 
+17: 00007FFFE5B4AF78 RtlUserThreadStart+40
+ 5: 00007FF662EE0F9C 
+11: 00007FF6631E9560 
+ 4: 00007FF6630F9C6B 
+ 6: 00007FF663286272 
+12: 00007FF662E1A5F2 
+12: 00007FF662EA6AF6 
+ 1: 00007FF6627A7F8F 
+27: 00007FF6646814F3 
+----- Native stack trace -----
+ 9: 00007FF662E1A484 v8::base::CPU::family+71364
+FATAL ERROR: NewSpace::EnsureCurrentCapacity Allocation failed - JavaScript heap out of memory
+13: 00007FF663203D15 
+----- Native stack trace -----
+
+ 8: 00007FF6631758F1 
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+
+
+15: 00007FF6630D1F16 v8::Promise::MarkAsSilent+522246
+16: 00007FFFE56B259D BaseThreadInitThunk+29
+19: 000001DC1FE7733A 
+19: 00007FF662EAA653 EC_KEY_METHOD_set_verify+315027
+18: 00007FF6627C1FBD 
+20: 00007FF662E77F0D 
+ 9: 00007FF663BBD14F 
+32: 00007FF66336B9E1 
+ 6: 00007FF6632266F7 
+12: 00007FF663203DEA 
+ 5: 00007FF6630E4CC7 
+ 7: 00007FF663286C52 
+13: 00007FF662E1A5F2 
+13: 00007FF662EA81FB 
+ 2: 00007FF6633EB1E7 
+28: 00007FFFE56B259D 
+
+10: 00007FF662E17F07 v8::base::CPU::family+61767
+----- Native stack trace -----
+14: 00007FF662DA1888 
+
+[90980:000001CD674AA000]      104 ms: Scavenge 8.7 (11.8) -> 7.4 (11.5) MB, pooled: 0 MB, 1.13 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 9: 00007FF6631DB7A3 
+----- Native stack trace -----
+ 1: 00007FF6627A7F8F 
+
+ 1: 00007FF6626FC28D node::MultiIsolatePlatform::DisposeIsolate+5341
+16: 00007FF66336FF2F EVP_MD_CTX_set_update_fn+270383
+17: 00007FFFE5B4AF78 RtlUserThreadStart+40
+20: 00007FF662EA8248 EC_KEY_METHOD_set_verify+305800
+19: 000001C51FDCF64D 
+21: 00007FF662E840EB 
+10: 00007FF6626F814E 
+33: 00007FF6633F46A3 
+ 7: 00007FF6633E17E1 
+13: 00007FF663210206 
+ 6: 00007FF6630DEC8E 
+ 8: 00007FF662D841B3 
+14: 00007FF662E19D78 
+14: 00007FF662EA73CE 
+ 3: 00007FF6631EBA97 
+29: 00007FFFE5B4AF78 
+ 1: 00007FF6627A7F8F 
+11: 00007FF662E1A34B v8::base::CPU::family+71051
+
+15: 00007FF662D9F65C 
+ 1: 00007FF6627A7F8F 
+
+10: 00007FF6631DB50E 
+
+ 2: 00007FF6633EB1E7 
+<--- Last few GCs --->
+ 2: 00007FF663B49576 v8::base::FatalOOM+54
+17: 00007FF663366848 EVP_MD_CTX_set_update_fn+231752
+21: 00007FF662EA73CE EC_KEY_METHOD_set_verify+302094
+22: 00007FF662E78682 
+11: 00007FF663440556 
+34: 00007FF6627D6460 
+ 8: 00007FF6633E248B 
+14: 00007FF662DE3137 
+ 7: 00007FF6630E5A59 
+ 9: 00007FF6634163A6 
+15: 00007FF662E18619 
+15: 00007FF662EA7089 
+ 4: 00007FF6631AC533 
+ 2: 00007FF6633EB1E7 
+12: 00007FF662E18685 v8::base::CPU::family+63685
+ 1: 00007FF6627A7F8F node::OnFatalError+1343
+16: 00007FF662DA5306 
+ 2: 00007FF6633EB1E7 
+FATAL ERROR: NewSpace::EnsureCurrentCapacity Allocation failed - JavaScript heap out of memory
+11: 00007FF6631DA2F8 
+ 1: 00007FF6627A7F8F node::OnFatalError+1343
+ 3: 00007FF662D65FC6 
+
+ 3: 00007FF6633EB1C6 v8::Function::NewInstance+390
+18: 00007FF663368FE4 EVP_MD_CTX_set_update_fn+241892
+22: 00007FF662EA7C36 EC_KEY_METHOD_set_verify+304246
+23: 00007FF662E89929 
+12: 00007FF6646814F3 
+35: 00007FF6627D7012 
+ 9: 00007FF662E92F9E 
+15: 000002039093733A 
+13: 00007FFFE56B259D 
+10: 00007FF6628B0A3D 
+16: 00007FF662E13523 
+16: 00007FF662EAF850 
+ 5: 00007FF6631EDE9A 
+ 3: 00007FF662D65FC6 
+13: 00007FF662E1A5F2 v8::base::CPU::family+71730
+ 2: 00007FF6633EB1E7 v8::Function::NewInstance+423
+17: 00007FF662DA0348 
+ 3: 00007FF6631EBA97 
+----- Native stack trace -----
+12: 00007FF6631DA27A 
+ 2: 00007FF6633EB1E7 v8::Function::NewInstance+423
+ 4: 00007FF6630EA7D8 
+[91056:000001C69539B000]       90 ms: Scavenge 8.0 (11.0) -> 6.8 (10.7) MB, pooled: 0 MB, 1.26 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 4: 00007FF6632522AE v8::CppHeap::CollectGarbageInYoungGenerationForTesting+111438
+19: 00007FF66336B9E1 EVP_MD_CTX_set_update_fn+252641
+23: 00007FF662EA7414 EC_KEY_METHOD_set_verify+302164
+24: 00007FF662E85BA9 
+ 8: 00007FF6630E6AAB 
+36: 00007FF6627D9096 
+10: 00007FF662E926DA 
+ 9: 00007FF6630EE329 
+11: 00007FF662612B84 
+17: 00007FF662E1A5F2 
+17: 00007FF662EA6AF6 
+ 6: 00007FF6631ED4C6 
+ 4: 00007FF66295E2A1 
+14: 00007FF662E1A5F2 v8::base::CPU::family+71730
+ 3: 00007FF6631EBA97 v8::base::AddressSpaceReservation::AddressSpaceReservation+322071
+18: 00007FF662D9F83E 
+ 4: 00007FF6631844BB 
+
+13: 00007FF662DA1813 
+ 3: 00007FF6631EBA97 v8::base::AddressSpaceReservation::AddressSpaceReservation+322071
+ 5: 00007FF6630E954B 
+[91056:000001C69539B000]      128 ms: Scavenge 8.9 (11.5) -> 8.2 (12.8) MB, pooled: 0 MB, 1.14 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 5: 00007FF6632857BF SSL_CTX_set_default_read_buffer_len+41247
+20: 00007FF6633F46A3 v8::ScriptCompiler::CompileFunction+1011
+24: 00007FF662EACD94 EC_KEY_METHOD_set_verify+325076
+25: 00007FF662E78936 
+14: 00007FFFE5B4AF78 
+37: 000001C0D9D0F64D 
+11: 00007FF662E8DD09 
+10: 00007FF6630DF7D5 
+12: 00007FF662611F19 
+18: 00007FF662E1A5F2 
+18: 00007FF662EA81FB 
+ 7: 00007FF6631FE452 
+ 5: 00007FF6630FBA65 
+15: 00007FF662E17F07 v8::base::CPU::family+61767
+ 4: 00007FF6631AC533 v8::base::AddressSpaceReservation::AddressSpaceReservation+62643
+19: 00007FF662DA5306 
+ 5: 00007FF66315BF0E 
+ 1: 00007FF6627A7F8F node::OnFatalError+1343
+14: 00007FF662D9F65C 
+ 4: 00007FF6631844BB v8::Platform::SystemClockTimeMillis+491051
+ 6: 00007FF6630EE329 
+
+ 6: 00007FF663286272 SSL_CTX_set_default_read_buffer_len+43986
+21: 00007FF6627C3823 node::GetCurrentEnvironment+20627
+25: 00007FF662EB81AF EC_KEY_METHOD_set_verify+371183
+26: 00007FF662E77F0D 
+12: 00007FF663368BDF 
+11: 00007FF6630DDA4B 
+13: 00007FF66261BE00 
+19: 00007FF662E16469 
+19: 00007FF662EA73CE 
+ 8: 00007FF6631FDF7B 
+ 6: 00007FF66310A247 
+16: 00007FF662E1A34B v8::base::CPU::family+71051
+ 5: 00007FF6631EDE9A v8::base::AddressSpaceReservation::AddressSpaceReservation+331290
+20: 00007FF662DA0348 
+ 6: 00007FF6631EE532 
+ 2: 00007FF6633EB1E7 v8::Function::NewInstance+423
+15: 00007FF662DA5306 
+ 5: 00007FF66315BF0E v8::Platform::SystemClockTimeMillis+325758
+ 7: 00007FF6630DF7D5 
+ 7: 00007FF663286C52 SSL_CTX_set_default_read_buffer_len+46514
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+22: 00007FF6627C1FBD node::GetCurrentEnvironment+14381
+26: 00007FF662EA197B EC_KEY_METHOD_set_verify+278971
+27: 00007FF662E7663B 
+13: 00007FF66336B9E1 
+12: 00007FF6630DDDD0 
+14: 00007FF663440556 
+20: 00007FF662E19D78 
+20: 00007FF662EB92A2 
+ 9: 00007FF664665D2D 
+ 7: 00007FF6630F231D 
+17: 00007FF662E18685 v8::base::CPU::family+63685
+ 6: 00007FF6631ED4C6 v8::base::AddressSpaceReservation::AddressSpaceReservation+328774
+21: 00007FF662D9F83E 
+ 7: 00007FF6631ED4E7 
+ 3: 00007FF6631EBA97 v8::base::AddressSpaceReservation::AddressSpaceReservation+322071
+16: 00007FF662DA0348 
+ 6: 00007FF6631EE532 v8::base::AddressSpaceReservation::AddressSpaceReservation+332978
+ 8: 00007FF6630DDA4B 
+ 8: 00007FF662D841B3 v8::internal::Version::GetSONAME+122307
+----- Native stack trace -----
+23: 0000027727DCF64D 
+27: 00007FF662E973BA EC_KEY_METHOD_set_verify+236538
+28: 00007FF662E75976 
+14: 00007FF6633F46A3 
+13: 00007FF6630DCFEB 
+15: 00007FF6646814F3 
+21: 00007FF662E18619 
+21: 00007FF662E98D75 
+10: 00007FF6631E9560 
+ 8: 00007FF6630DF7D5 
+18: 00007FF662E1A5F2 v8::base::CPU::family+71730
+ 7: 00007FF6631FE452 v8::internal::StrongRootAllocatorBase::deallocate_impl+15858
+22: 00007FF662DA5306 
+ 8: 00007FF6631FE452 
+ 4: 00007FF6631AC533 v8::base::AddressSpaceReservation::AddressSpaceReservation+62643
+17: 00007FF662D9F83E 
+ 7: 00007FF6631ED4E7 v8::base::AddressSpaceReservation::AddressSpaceReservation+328807
+ 9: 00007FF6630DDDD0 
+ 9: 00007FF6634163A6 v8::Isolate::Initialize+662
+
+28: 00007FF662EA80F0 EC_KEY_METHOD_set_verify+305456
+29: 00007FF662EA04D8 
+15: 00007FF6627D6460 
+14: 00007FF6630DC45F 
+16: 00007FFFE56B259D 
+22: 00007FF662E1A5F2 
+22: 00007FF662EA197B 
+11: 00007FF66326D0E9 
+
+ 9: 00007FF6630DDA4B 
+19: 00007FF662E1A5F2 v8::base::CPU::family+71730
+ 8: 00007FF6631FDF7B v8::internal::StrongRootAllocatorBase::deallocate_impl+14619
+23: 00007FF662DA0348 
+ 9: 00007FF6631FDF7B 
+ 5: 00007FF6631EDE9A v8::base::AddressSpaceReservation::AddressSpaceReservation+331290
+18: 00007FF662DA5306 
+ 8: 00007FF6631FE452 v8::internal::StrongRootAllocatorBase::deallocate_impl+15858
+10: 00007FF6630DCFEB 
+10: 00007FF6628B0A3D node::SetIsolateUpForNode+669
+ 1: 00007FF6627A7F8F 
+29: 00007FF662EA7414 EC_KEY_METHOD_set_verify+302164
+30: 00007FF662E944F0 
+16: 00007FF6627D7012 
+15: 00007FF6630DAC6F 
+17: 00007FFFE5B4AF78 
+23: 00007FF662E1A5F2 
+23: 00007FF662EA0E7A 
+12: 00007FF662DE2E08 
+<--- Last few GCs --->
+10: 00007FF6630DDDD0 
+20: 00007FF662E17F07 v8::base::CPU::family+61767
+ 9: 00007FF664665D2D v8::base::UnsignedDivisionByConstant<unsigned __int64>+2791341
+24: 00007FF662D9F83E 
+10: 00007FF664665D2D 
+ 6: 00007FF6631ED4C6 v8::base::AddressSpaceReservation::AddressSpaceReservation+328774
+19: 00007FF662DA0348 
+ 9: 00007FF6631FDF7B v8::internal::StrongRootAllocatorBase::deallocate_impl+14619
+11: 00007FF6630DC45F 
+11: 00007FF662612B84 RSA_meth_get_flags+212292
+ 2: 00007FF6633EB1E7 
+30: 00007FF662EACD94 EC_KEY_METHOD_set_verify+325076
+31: 00007FF662EB8A73 
+17: 00007FF6627D9096 
+16: 00007FF6630D1F16 
+24: 00007FF662E19D78 
+24: 00007FF662E94577 
+13: 000001E1FF37733A 
+
+11: 00007FF6630DF9BA 
+21: 00007FF662E1A34B v8::base::CPU::family+71051
+10: 00007FF6631E9560 v8::base::AddressSpaceReservation::AddressSpaceReservation+312544
+25: 00007FF662DA5306 
+11: 00007FF6631E9560 
+ 7: 00007FF6631FE452 v8::internal::StrongRootAllocatorBase::deallocate_impl+15858
+20: 00007FF662D9F83E 
+10: 00007FF664665D2D v8::base::UnsignedDivisionByConstant<unsigned __int64>+2791341
+12: 00007FF6630DAC6F 
+12: 00007FF662611F19 RSA_meth_get_flags+209113
+ 3: 00007FF6631EBA97 
+31: 00007FF662EAB21E EC_KEY_METHOD_set_verify+318046
+32: 00007FF662E98EE4 
+18: 000001FCC990F64D 
+17: 00007FF66336FF2F 
+25: 00007FF662E18619 
+25: 00007FF662E93744 
+[76784:000002554BBF7000]       71 ms: Scavenge 8.7 (11.8) -> 7.4 (11.5) MB, pooled: 0 MB, 0.84 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+12: 00007FF6630DCFEB 
+22: 00007FF662E18685 v8::base::CPU::family+63685
+11: 00007FF66320FC46 uv_timer_set_repeat+19094
+26: 00007FF662DA0348 
+12: 00007FF663203EBE 
+ 8: 00007FF6631FDF7B v8::internal::StrongRootAllocatorBase::deallocate_impl+14619
+21: 00007FF662DA5306 
+11: 00007FF6631E9560 v8::base::AddressSpaceReservation::AddressSpaceReservation+312544
+13: 00007FF6630D1F16 
+13: 00007FF66261BE00 RSA_meth_get_flags+249792
+ 4: 00007FF6631844BB 
+32: 00007FF662EA81FB EC_KEY_METHOD_set_verify+305723
+33: 00007FF662EA197B 
+18: 00007FF663366848 
+26: 00007FF662E12886 
+26: 00007FF662E92A32 
+[76784:000002554BBF7000]      108 ms: Scavenge 9.4 (12.3) -> 8.8 (13.3) MB, pooled: 0 MB, 1.09 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+13: 00007FF6630DC45F 
+23: 00007FF662E1A5F2 v8::base::CPU::family+71730
+12: 00007FF663226F9E uv_timer_set_repeat+114158
+27: 00007FF662D9F83E 
+13: 00007FF66320FBC8 
+ 9: 00007FF664665D2D v8::base::UnsignedDivisionByConstant<unsigned __int64>+2791341
+22: 00007FF662DA0348 
+12: 00007FF663203DEA X509_STORE_set_cleanup+5098
+14: 00007FF66336FF2F 
+14: 00007FF663440556 uv_thread_detach+150
+ 5: 00007FF66315BF0E 
+33: 00007FF662EA73CE EC_KEY_METHOD_set_verify+302094
+34: 00007FF662EA0E7A 
+19: 00007FF663368FE4 
+27: 00007FF662DF5DC0 
+27: 00007FF662E926DA 
+[76784:000002554BBF7000]      148 ms: Scavenge 10.6 (13.3) -> 9.7 (16.1) MB, pooled: 0 MB, 0.84 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+14: 00007FF6630DAAF3 
+24: 00007FF662E1A5F2 v8::base::CPU::family+71730
+13: 00007FF662F29A83 v8::RegExp::GetFlags+211539
+28: 00007FF662DA5306 
+14: 00007FF66322AD84 
+10: 00007FF6631E9560 v8::base::AddressSpaceReservation::AddressSpaceReservation+312544
+23: 00007FF662D9F83E 
+13: 00007FF66320FBC8 uv_timer_set_repeat+18968
+15: 00007FF663366848 
+15: 00007FF6646814F3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2903923
+ 6: 00007FF6631EE532 
+34: 00007FF662EACD94 EC_KEY_METHOD_set_verify+325076
+35: 00007FF662E94577 
+20: 00007FF66336B9E1 
+28: 00007FF662DF54E2 
+28: 00007FF662E8DD09 
+
+15: 00007FF6630D1F16 
+25: 00007FF662E17F07 v8::base::CPU::family+61767
+14: 00007FF662F3285C v8::RegExp::GetFlags+247852
+29: 00007FF662DA0348 
+15: 00007FF66322AC5C 
+11: 00007FF66320FC46 uv_timer_set_repeat+19094
+24: 00007FF662DA68DE 
+14: 00007FF66322AD84 uv_timer_set_repeat+130004
+16: 00007FF663368FE4 
+16: 00007FFFE56B259D 
+ 7: 00007FF6631ED4E7 
+35: 00007FF662EB81AF EC_KEY_METHOD_set_verify+371183
+36: 00007FF662E93744 
+21: 00007FF6633F46A3 
+29: 00007FF662DF3DD9 
+29: 00007FF663368BDF 
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+16: 00007FF66336FF2F 
+26: 00007FF662E19D78 v8::base::CPU::family+69560
+15: 00007FF662F923FA v8::RegExp::GetFlags+639946
+30: 00007FF662D9F83E 
+16: 00007FF663211DA9 
+12: 00007FF66322A426 uv_timer_set_repeat+127606
+25: 00007FF662DA008D 
+15: 00007FF66322AC5C uv_timer_set_repeat+129708
+17: 00007FF66336B9E1 
+17: 00007FFFE5B4AF78 RtlUserThreadStart+40
+
+ 8: 00007FF6631FE452 
+36: 00007FF662EA197B EC_KEY_METHOD_set_verify+278971
+37: 00007FF662E92A32 
+22: 00007FF6627C3823 
+30: 00007FF662DF406C 
+30: 00007FF66336B9E1 
+----- Native stack trace -----
+17: 00007FF663366848 
+27: 00007FF662E18619 v8::base::CPU::family+63577
+16: 00007FF662F91B80 v8::RegExp::GetFlags+637776
+31: 00007FF662DA68DE 
+17: 00007FF663211F12 
+13: 00007FF66322A2B8 uv_timer_set_repeat+127240
+26: 00007FF6631F3A58 
+16: 00007FF663211DA9 uv_timer_set_repeat+27641
+18: 00007FF6633F46A3 
+<--- Last few GCs --->
+ 9: 00007FF6631FDF7B 
+37: 00007FF662E973BA EC_KEY_METHOD_set_verify+236538
+38: 00007FF662E926DA 
+23: 00007FF6627C1FBD 
+31: 00007FF662DF3F4B 
+31: 00007FF6633F46A3 
+
+18: 00007FF66336607D 
+28: 00007FF662E1A5F2 v8::base::CPU::family+71730
+17: 00007FF662F90E2D v8::RegExp::GetFlags+634365
+32: 00007FF662DA008D 
+18: 00007FF6633EAFE2 
+14: 00007FF662EE0E60 v8::MemorySpan<v8::Local<v8::Context> const >::operator[]+73520
+
+27: 00007FF662D7E573 
+17: 00007FF663211F12 uv_timer_set_repeat+28002
+19: 00007FF6627C3823 
+[89592:000001F6E6583000]       41 ms: Scavenge 5.9 (7.2) -> 5.3 (9.9) MB, pooled: 0 MB, 0.88 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+10: 00007FF664665D2D 
+38: 00007FF662EA80F0 EC_KEY_METHOD_set_verify+305456
+39: 00007FF662E8DD09 
+24: 000001FD3944F64D 
+32: 00007FF662DCACC2 
+
+32: 00007FF6627C3823 
+ 1: 00007FF6627A7F8F 
+19: 00007FF663366B0C 
+29: 00007FF662E19D78 v8::base::CPU::family+69560
+18: 00007FF662F90B94 v8::RegExp::GetFlags+633700
+33: 00007FF6631F3A58 
+19: 00007FF662782875 
+15: 00007FF6632266F7 uv_timer_set_repeat+111943
+<--- Last few GCs --->
+28: 00007FF66328685C 
+18: 00007FF6633EAFE2 v8::String::NewFromUtf8+258
+20: 00007FF6627C1FBD 
+
+11: 00007FF6631E9560 
+39: 00007FF662EA7414 EC_KEY_METHOD_set_verify+302164
+40: 00007FF663368BDF 
+33: 00000252D807733A 
+<--- Last few GCs --->
+33: 00007FF6627C1FBD 
+ 2: 00007FF6633EB1E7 
+20: 00007FF662DEA1AB 
+30: 00007FF662E18619 v8::base::CPU::family+63577
+19: 00007FF662F90627 v8::RegExp::GetFlags+632311
+34: 00007FF662D7E573 
+20: 000001C7CA9CF64D 
+16: 00007FF6633E17E1 EVP_MD_CTX_set_update_fn+735457
+[90164:000001D19880B000]       45 ms: Scavenge 5.9 (7.2) -> 5.3 (9.9) MB, pooled: 0 MB, 0.70 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+29: 00007FF663286C52 
+19: 00007FF662782875 v8::base::CPU::num_virtual_address_bits+49205
+21: 0000027CC820F64D 
+FATAL ERROR: Zone Allocation failed - process out of memory
+12: 00007FF663203EBE 
+40: 00007FF662EACD94 EC_KEY_METHOD_set_verify+325076
+41: 00007FF66336B9E1 
+[50652:000001F03868C000]       54 ms: Scavenge 5.9 (6.9) -> 5.3 (9.7) MB, pooled: 0 MB, 0.79 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+34: 000002144A20F64D 
+ 3: 00007FF6631EBA97 
+21: 000002389FE7733A 
+31: 00007FF662E1A5F2 v8::base::CPU::family+71730
+20: 00007FF662F90398 v8::RegExp::GetFlags+631656
+35: 00007FF66328685C 
+17: 00007FF6633E248B EVP_MD_CTX_set_update_fn+738699
+
+30: 00007FF662D841B3 
+20: 000002125408F64D 
+----- Native stack trace -----
+13: 00007FF66320FBC8 
+41: 00007FF662EAB21E EC_KEY_METHOD_set_verify+318046
+42: 00007FF6633F46A3 
+
+ 4: 00007FF6631844BB 
+32: 00007FF662E1A5F2 v8::base::CPU::family+71730
+21: 00007FF66339F506 EVP_MD_CTX_set_update_fn+464390
+36: 00007FF663286C52 
+18: 00007FF662E8E9C7 EC_KEY_METHOD_set_verify+201223
+FATAL ERROR: Zone Allocation failed - process out of memory
+31: 00007FF6634163A6 
+
+14: 00007FF66322AD84 
+42: 00007FF662EA81FB EC_KEY_METHOD_set_verify+305723
+43: 00007FF6627D6460 
+FATAL ERROR: Zone Allocation failed - process out of memory
+
+ 5: 00007FF6631AC82A 
+33: 00007FF662E19D78 v8::base::CPU::family+69560
+22: 000002374E2B727A 
+37: 00007FF662D841B3 
+19: 00007FF662E95316 EC_KEY_METHOD_set_verify+228182
+----- Native stack trace -----
+32: 00007FF6628B0A3D 
+ 1: 00007FF6627A7F8F node::OnFatalError+1343
+15: 00007FF66322AC5C 
+43: 00007FF662EA73CE EC_KEY_METHOD_set_verify+302094
+44: 00007FF6627D7012 
+----- Native stack trace -----
+<--- Last few GCs --->
+ 6: 00007FF6631EDE76 
+34: 00007FF662E18619 v8::base::CPU::family+63577
+38: 00007FF6634163A6 
+20: 00007FF662E8DF8E EC_KEY_METHOD_set_verify+198606
+
+33: 00007FF662612B84 
+ 2: 00007FF6633EB1E7 v8::Function::NewInstance+423
+16: 00007FF663211DA9 
+
+44: 00007FF662EACD94 EC_KEY_METHOD_set_verify+325076
+45: 00007FF6627D9096 
+
+[79480:0000024BF9E9A000]       48 ms: Scavenge 5.9 (7.2) -> 5.3 (9.9) MB, pooled: 0 MB, 0.93 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 7: 00007FF6631ED4C6 
+35: 00007FF662E13523 v8::base::CPU::family+42851
+39: 00007FF6628B0A3D 
+21: 00007FF663366020 EVP_MD_CTX_set_update_fn+229664
+ 1: 00007FF6627A7F8F 
+34: 00007FF662611F19 
+ 3: 00007FF662D65FC6 v8::SnapshotCreator::GetIsolate+56566
+17: 00007FF663211F12 
+<--- Last few GCs --->
+45: 00007FF662EB81AF EC_KEY_METHOD_set_verify+371183
+46: 00000161C5ACF64D 
+ 1: 00007FF6627A7F8F 
+
+ 8: 00007FF6631FE452 
+36: 00007FF662E1A5F2 v8::base::CPU::family+71730
+40: 00007FF662612B84 
+22: 00007FF663366B0C EVP_MD_CTX_set_update_fn+232460
+ 2: 00007FF6633EB1E7 
+35: 00007FF66261BE00 
+ 4: 00007FF6633E89E4 EVP_MD_CTX_set_update_fn+764644
+18: 00007FF6633EAFE2 
+
+46: 00007FF662EA197B EC_KEY_METHOD_set_verify+278971
+ 2: 00007FF6633EB1E7 
+ 9: 00007FF6631FDF7B 
+37: 00007FF662E1A5F2 v8::base::CPU::family+71730
+FATAL ERROR: MarkCompactCollector: young object promotion failed Allocation failed - JavaScript heap out of memory
+41: 00007FF662611F19 
+23: 00007FF662DEA1AB v8::String::Value::~Value+172283
+ 3: 00007FF662D65FC6 
+36: 00007FF663440556 
+ 5: 00007FF6633E87A0 EVP_MD_CTX_set_update_fn+764064
+19: 00007FF662782875 
+[50348:0000019AAA71C000]       77 ms: Scavenge 8.7 (11.8) -> 7.5 (11.5) MB, pooled: 0 MB, 0.78 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+47: 00007FF662EA0E7A EC_KEY_METHOD_set_verify+276154
+ 3: 00007FF662D65FC6 
+10: 00007FF664665D2D 
+38: 00007FF662E16469 v8::base::CPU::family+54953
+
+42: 00007FF66261BE00 
+24: 000001CD1FE7733A 
+ 4: 00007FF6633E89FA 
+37: 00007FF6646814F3 
+ 6: 00007FF662E70EDF EC_KEY_METHOD_set_verify+79647
+20: 000001C6CD64F64D 
+[50348:0000019AAA71C000]      105 ms: Scavenge 9.4 (12.1) -> 8.7 (13.3) MB, pooled: 0 MB, 0.99 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+48: 00007FF662E94577 EC_KEY_METHOD_set_verify+224695
+ 4: 00007FF662E04A5D 
+11: 00007FF6631E9560 
+39: 00007FF662E19D78 v8::base::CPU::family+69560
+<--- Last few GCs --->
+43: 00007FF663440556 
+ 5: 00007FF6633E87A0 
+38: 00007FFFE56B259D 
+ 7: 00007FF662E85194 EC_KEY_METHOD_set_verify+162260
+
+49: 00007FF662E93744 EC_KEY_METHOD_set_verify+221060
+ 5: 00007FF662EA6D1E 
+12: 00007FF66326D0E9 
+40: 00007FF662E18619 v8::base::CPU::family+63577
+[79480:0000024BF9E9A000]       48 ms: Scavenge 5.9 (7.2) -> 5.3 (9.9) MB, pooled: 0 MB, 0.93 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+44: 00007FF6646814F3 
+ 6: 00007FF662E70EDF 
+39: 00007FFFE5B4AF78 
+ 8: 00007FF662E77CD6 EC_KEY_METHOD_set_verify+107798
+50: 00007FF662E92A32 EC_KEY_METHOD_set_verify+217714
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+ 6: 00007FF662EB97EC 
+13: 00007FF662DE2A62 
+41: 00007FF662E1A5F2 v8::base::CPU::family+71730
+
+45: 00007FFFE56B259D 
+ 7: 00007FF662E91B06 
+ 9: 00007FF662E840EB EC_KEY_METHOD_set_verify+157995
+51: 00007FF662E926DA EC_KEY_METHOD_set_verify+216858
+----- Native stack trace -----
+ 7: 00007FF662E98D75 
+14: 000002551FE7733A 
+42: 00007FF662E1A5F2 v8::base::CPU::family+71730
+----- Native stack trace -----
+46: 00007FFFE5B4AF78 
+ 8: 00007FF662EA81FB 
+10: 00007FF662E78682 EC_KEY_METHOD_set_verify+110274
+52: 00007FF662E8DD09 EC_KEY_METHOD_set_verify+197961
+
+ 8: 00007FF662EA197B 
+43: 00007FF662E19D78 v8::base::CPU::family+69560
+
+ 9: 00007FF662EA73CE 
+11: 00007FF662E89929 EC_KEY_METHOD_set_verify+180585
+53: 00007FF663368BDF EVP_MD_CTX_set_update_fn+240863
+ 1: 00007FF6627A7F8F node::OnFatalError+1343
+ 9: 00007FF662EA0E7A 
+44: 00007FF662E18619 v8::base::CPU::family+63577
+FATAL ERROR: MarkCompactCollector: young object promotion failed Allocation failed - JavaScript heap out of memory
+10: 00007FF662EA7089 
+12: 00007FF662E85BA9 EC_KEY_METHOD_set_verify+164841
+54: 00007FF66336B9E1 EVP_MD_CTX_set_update_fn+252641
+ 2: 00007FF6633EB1E7 v8::Function::NewInstance+423
+10: 00007FF662E94577 
+45: 00007FF662E12886 v8::base::CPU::family+39622
+----- Native stack trace -----
+11: 00007FF662EAF850 
+13: 00007FF662E78936 EC_KEY_METHOD_set_verify+110966
+55: 00007FF6633F46A3 v8::ScriptCompiler::CompileFunction+1011
+ 3: 00007FF6631EBA97 v8::base::AddressSpaceReservation::AddressSpaceReservation+322071
+11: 00007FF662E93744 
+46: 00007FF662DF5DC0 v8::PropertyDescriptor::value+10784
+
+12: 00007FF662EA6AF6 
+14: 00007FF662E77F0D EC_KEY_METHOD_set_verify+108365
+56: 00007FF6627C3823 node::GetCurrentEnvironment+20627
+ 4: 00007FF6631844BB v8::Platform::SystemClockTimeMillis+491051
+12: 00007FF662E92A32 
+47: 00007FF662DF54E2 v8::PropertyDescriptor::value+8514
+
+13: 00007FF662EA81FB 
+15: 00007FF662E840EB EC_KEY_METHOD_set_verify+157995
+57: 00007FF6627C1FBD node::GetCurrentEnvironment+14381
+ 5: 00007FF66315BF0E v8::Platform::SystemClockTimeMillis+325758
+13: 00007FF662E926DA 
+48: 00007FF662DF3DD9 v8::PropertyDescriptor::value+2617
+<--- Last few GCs --->
+14: 00007FF662EA73CE 
+16: 00007FF662E78682 EC_KEY_METHOD_set_verify+110274
+58: 000001B4BF8CF64D 
+ 6: 00007FF6631EE532 v8::base::AddressSpaceReservation::AddressSpaceReservation+332978
+14: 00007FF662E8DD09 
+49: 00007FF662DF406C v8::PropertyDescriptor::value+3276
+[79480:0000024BF9E9A000]       48 ms: Scavenge 5.9 (7.2) -> 5.3 (9.9) MB, pooled: 0 MB, 0.93 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+15: 00007FF662EA7089 
+17: 00007FF662E89929 EC_KEY_METHOD_set_verify+180585
+ 7: 00007FF6631ED4E7 v8::base::AddressSpaceReservation::AddressSpaceReservation+328807
+15: 00007FF663368BDF 
+50: 00007FF662DF3F4B v8::PropertyDescriptor::value+2987
+
+16: 00007FF662EAF850 
+18: 00007FF662E85BA9 EC_KEY_METHOD_set_verify+164841
+ 8: 00007FF6631FE452 v8::internal::StrongRootAllocatorBase::deallocate_impl+15858
+16: 00007FF66336B9E1 
+51: 00007FF662DCACC2 v8::String::Value::~Value+44050
+FATAL ERROR: MarkCompactCollector: young object promotion failed Allocation failed - JavaScript heap out of memory
+17: 00007FF662EA6AF6 
+19: 00007FF662E78936 EC_KEY_METHOD_set_verify+110966
+ 9: 00007FF6631FDF7B v8::internal::StrongRootAllocatorBase::deallocate_impl+14619
+17: 00007FF6633F46A3 
+52: 000002891FE7733A 
+----- Native stack trace -----
+18: 00007FF662EA81FB 
+20: 00007FF662E77F0D EC_KEY_METHOD_set_verify+108365
+10: 00007FF664665D2D v8::base::UnsignedDivisionByConstant<unsigned __int64>+2791341
+18: 00007FF6627D6460 
+
+19: 00007FF662EA73CE 
+21: 00007FF662E840EB EC_KEY_METHOD_set_verify+157995
+11: 00007FF6631E9560 v8::base::AddressSpaceReservation::AddressSpaceReservation+312544
+19: 00007FF6627D7012 
+ 1: 00007FF6627A7F8F 
+20: 00007FF662EB92A2 
+22: 00007FF662E78682 EC_KEY_METHOD_set_verify+110274
+12: 00007FF663203DEA X509_STORE_set_cleanup+5098
+20: 00007FF6627D9096 
+ 2: 00007FF6633EB1E7 
+21: 00007FF662E98D75 
+23: 00007FF662E89929 EC_KEY_METHOD_set_verify+180585
+13: 00007FF663210206 uv_timer_set_repeat+20566
+21: 000001F07058F64D 
+ 3: 00007FF6631EBA97 
+22: 00007FF662EA197B 
+24: 00007FF662E85BA9 EC_KEY_METHOD_set_verify+164841
+14: 00007FF662DE3137 v8::String::Value::~Value+143495
+ 4: 00007FF6631CB3AE 
+23: 00007FF662EA0E7A 
+25: 00007FF662E78936 EC_KEY_METHOD_set_verify+110966
+15: 0000019AE26F733A 
+ 5: 00007FF6631C0A6D 
+24: 00007FF662E94577 
+26: 00007FF662E77F0D EC_KEY_METHOD_set_verify+108365
+ 6: 00007FF6631C071C 
+25: 00007FF662E93744 
+27: 00007FF662E7663B EC_KEY_METHOD_set_verify+102011
+ 7: 00007FF6631C0361 
+26: 00007FF662E92A32 
+28: 00007FF662E75976 EC_KEY_METHOD_set_verify+98742
+ 8: 00007FF6631D2648 
+27: 00007FF662E926DA 
+29: 00007FF662EA04D8 EC_KEY_METHOD_set_verify+273688
+ 9: 00007FF663BBCA6D 
+28: 00007FF662E8DD09 
+30: 00007FF662E944F0 EC_KEY_METHOD_set_verify+224560
+10: 00007FF663BBCD82 
+29: 00007FF663368BDF 
+31: 00007FF662EB8A73 EC_KEY_METHOD_set_verify+373427
+11: 00007FF6631C33A4 
+
+30: 00007FF66336B9E1 
+32: 00007FF662E98EE4 EC_KEY_METHOD_set_verify+243492
+12: 00007FF6631AAACD 
+<--- Last few GCs --->
+31: 00007FF6633F46A3 
+33: 00007FF662EA197B EC_KEY_METHOD_set_verify+278971
+13: 00007FF6631A4B44 
+
+32: 00007FF6627C3823 
+34: 00007FF662EA0E7A EC_KEY_METHOD_set_verify+276154
+14: 00007FF6631EDE9A 
+[79928:00000169FB04A000]       85 ms: Scavenge 8.7 (11.8) -> 7.4 (11.5) MB, pooled: 0 MB, 1.10 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+33: 00007FF6627C1FBD 
+35: 00007FF662E94577 EC_KEY_METHOD_set_verify+224695
+15: 00007FF6631ED4C6 
+[79928:00000169FB04A000]      122 ms: Scavenge 9.4 (12.3) -> 8.7 (13.3) MB, pooled: 0 MB, 1.40 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+34: 000001D1D0A8F64D 
+36: 00007FF662E93744 EC_KEY_METHOD_set_verify+221060
+16: 00007FF6631FE452 
+
+37: 00007FF662E92A32 EC_KEY_METHOD_set_verify+217714
+17: 00007FF6631FDF7B 
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+38: 00007FF662E926DA EC_KEY_METHOD_set_verify+216858
+18: 00007FF664665D2D 
+----- Native stack trace -----
+39: 00007FF662E8DD09 EC_KEY_METHOD_set_verify+197961
+19: 00007FF6631E9560 
+
+40: 00007FF663368BDF EVP_MD_CTX_set_update_fn+240863
+20: 00007FF66320ECF0 
+ 1: 00007FF6627A7F8F 
+41: 00007FF66336B9E1 EVP_MD_CTX_set_update_fn+252641
+21: 00007FF663225432 
+ 2: 00007FF6633EB1E7 
+42: 00007FF6633F46A3 v8::ScriptCompiler::CompileFunction+1011
+
+22: 00007FF6632182FA 
+ 3: 00007FF6631EBA97 
+43: 00007FF6627D6460 node::GetCurrentEnvironment+97488
+<--- Last few GCs --->
+23: 00007FF662DC5842 
+44: 00007FF6627D7012 node::GetCurrentEnvironment+100482
+[80180:000001A8E296C000]       54 ms: Scavenge 5.9 (7.2) -> 5.3 (9.9) MB, pooled: 0 MB, 0.84 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 4: 00007FF6631844BB 
+24: 0000024BB7E7733A 
+ 5: 00007FF66315BF0E 
+45: 00007FF6627D9096 node::GetCurrentEnvironment+108806
+
+ 6: 00007FF6631EE532 
+46: 000001F69FDCF64D 
+FATAL ERROR: Zone Allocation failed - process out of memory
+ 7: 00007FF6631ED4E7 
+----- Native stack trace -----
+ 8: 00007FF6631FE452 
+
+ 9: 00007FF6631FDF7B 
+ 1: 00007FF6627A7F8F 
+10: 00007FF664665D2D 
+ 2: 00007FF6633EB1E7 
+11: 00007FF6631E9560 
+ 3: 00007FF662D65FC6 
+12: 00007FF663203DEA 
+ 4: 00007FF66295E2A1 
+13: 00007FF663210206 
+
+ 5: 00007FF663329C16 
+14: 00007FF662DE3137 
+<--- Last few GCs --->
+ 6: 00007FF6630FB855 
+15: 00000169B7E7733A 
+
+ 7: 00007FF663100CFE 
+ 8: 00007FF6630E8D07 
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+ 9: 00007FF6630F16C4 
+----- Native stack trace -----
+10: 00007FF6630F2033 
+
+11: 00007FF6630EE329 
+12: 00007FF6630DF7D5 
+ 1: 00007FF6627A7F8F 
+13: 00007FF6630DDA4B 
+ 2: 00007FF6633EB1E7 
+14: 00007FF6630DDDD0 
+ 3: 00007FF6631EBA97 
+15: 00007FF6630DCFEB 
+ 4: 00007FF6631844BB 
+16: 00007FF6630DC45F 
+ 5: 00007FF66315BF0E 
+17: 00007FF6630DAC6F 
+ 6: 00007FF6631EE532 
+18: 00007FF6630D1F16 
+ 7: 00007FF6631ED4E7 
+19: 00007FF66336FF2F 
+ 8: 00007FF6631FE452 
+20: 00007FF663366848 
+ 9: 00007FF6631FDF7B 
+21: 00007FF663368FE4 
+10: 00007FF664665D2D 
+22: 00007FF66336B9E1 
+11: 00007FF6631E9560 
+23: 00007FF6633F46A3 
+12: 00007FF663203DEA 
+24: 00007FF6627D6460 
+13: 00007FF663210206 
+25: 00007FF6627D7012 
+14: 00007FF662DE3137 
+26: 00007FF6627D9096 
+15: 000001679FE7733A 
+27: 000001A89FDCF64D 
+
+<--- Last few GCs --->
+
+
+
+<--- Last few GCs --->
+<--- Last few GCs --->
+[84560:000001DC932E7000]       75 ms: Scavenge 8.0 (11.2) -> 6.8 (10.9) MB, pooled: 0 MB, 2.34 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[91316:000002076E7AA000]       40 ms: Scavenge 5.9 (7.2) -> 5.3 (9.9) MB, pooled: 0 MB, 0.77 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[82760:00000235CA7E5000]       39 ms: Scavenge 5.9 (7.2) -> 5.3 (9.9) MB, pooled: 0 MB, 0.73 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[84560:000001DC932E7000]       79 ms: Scavenge 6.8 (10.9) -> 6.7 (11.7) MB, pooled: 0 MB, 4.28 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+
+FATAL ERROR: AlignedAlloc Allocation failed - process out of memory
+FATAL ERROR: NewSpace::EnsureCurrentCapacity Allocation failed - JavaScript heap out of memory
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+----- Native stack trace -----
+----- Native stack trace -----
+
+
+
+ 1: 00007FF6627A7F8F 
+ 1: 00007FF6627A7F8F 
+ 1: 00007FF6627A7F8F 
+ 2: 00007FF6633EB1E7 
+ 2: 00007FF6633EB1E7 
+ 2: 00007FF6633EB1E7 
+ 3: 00007FF6631EBA97 
+
+
+ 3: 00007FF662D68F0E 
+ 3: 00007FF6631EBA97 
+ 4: 00007FF6631AC533 
+<--- Last few GCs --->
+<--- Last few GCs --->
+ 4: 00007FF662EE2FAB 
+ 4: 00007FF6631844BB 
+ 5: 00007FF6631EDE9A 
+[23484:000001D7E2EFC000]       50 ms: Scavenge 5.9 (7.7) -> 5.3 (10.4) MB, pooled: 0 MB, 0.78 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[90420:0000020BE141B000]       46 ms: Scavenge 5.9 (7.2) -> 5.3 (9.9) MB, pooled: 0 MB, 0.98 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 5: 00007FF662EE0F9C 
+ 5: 00007FF6631AC82A 
+ 6: 00007FF6631ED4C6 
+
+
+ 6: 00007FF6632266F7 
+ 6: 00007FF6631EDE76 
+ 7: 00007FF6631FE452 
+FATAL ERROR: AlignedAlloc Allocation failed - process out of memory
+ 7: 00007FF6633E17E1 
+FATAL ERROR: NewSpace::EnsureCurrentCapacity Allocation failed - JavaScript heap out of memory
+ 7: 00007FF6631ED4C6 
+ 8: 00007FF6631FDF7B 
+----- Native stack trace -----
+ 8: 00007FF6633E248B 
+----- Native stack trace -----
+ 8: 00007FF6631FE452 
+ 9: 00007FF664665D2D 
+
+
+ 9: 00007FF662E92F9E 
+ 9: 00007FF6631FDF7B 
+10: 00007FF6631E9560 
+10: 00007FF662E926DA 
+ 1: 00007FF6627A7F8F 
+ 1: 00007FF6627A7F8F node::OnFatalError+1343
+10: 00007FF664665D2D 
+11: 00007FF66320FC46 
+11: 00007FF662E8DD09 
+ 2: 00007FF6633EB1E7 
+ 2: 00007FF6633EB1E7 v8::Function::NewInstance+423
+11: 00007FF6631E9560 
+12: 00007FF663229755 
+12: 00007FF663368BDF 
+ 3: 00007FF662D68F0E 
+ 3: 00007FF6631EBA97 v8::base::AddressSpaceReservation::AddressSpaceReservation+322071
+12: 00007FF6631E9E86 
+13: 00007FF663229675 
+13: 00007FF66336B9E1 
+ 4: 00007FF662EE2FAB 
+ 4: 00007FF6631AC533 v8::base::AddressSpaceReservation::AddressSpaceReservation+62643
+13: 00007FF663203F3E 
+14: 00007FF66335E740 
+14: 00007FF6633F46A3 
+ 5: 00007FF662EE0F9C 
+ 5: 00007FF6631EDE9A v8::base::AddressSpaceReservation::AddressSpaceReservation+331290
+14: 00007FF66320FBC8 
+15: 00007FF6630D93D5 
+15: 00007FF6627D6460 
+ 6: 00007FF6632266F7 
+ 6: 00007FF6631ED4C6 v8::base::AddressSpaceReservation::AddressSpaceReservation+328774
+15: 00007FF66322AED5 
+16: 00007FF6630D90C6 
+16: 00007FF6627D7012 
+ 7: 00007FF6633E17E1 
+ 7: 00007FF6631FE452 v8::internal::StrongRootAllocatorBase::deallocate_impl+15858
+16: 00007FF66322AE3C 
+17: 00007FF6630D22AF 
+17: 00007FF6627D9096 
+ 8: 00007FF6633E248B 
+ 8: 00007FF6631FDF7B v8::internal::StrongRootAllocatorBase::deallocate_impl+14619
+17: 00007FF663211D19 
+18: 00007FF6630D2122 
+18: 0000020727DCF64D 
+ 9: 00007FF662E92F9E 
+ 9: 00007FF664665D2D v8::base::UnsignedDivisionByConstant<unsigned __int64>+2791341
+18: 00007FF663211F12 
+19: 00007FF66336EE2C 
+10: 00007FF662E926DA 
+10: 00007FF6631E9560 v8::base::AddressSpaceReservation::AddressSpaceReservation+312544
+
+19: 00007FF6633EAFE2 
+20: 00007FF6633668C1 
+11: 00007FF662E8DD09 
+11: 00007FF66320FC11 uv_timer_set_repeat+19041
+<--- Last few GCs --->
+20: 00007FF662782875 
+21: 00007FF66336607D 
+12: 00007FF663368BDF 
+12: 00007FF66322AD84 uv_timer_set_repeat+130004
+[92736:000002342709A000]       54 ms: Scavenge 5.9 (7.2) -> 5.3 (9.9) MB, pooled: 0 MB, 0.81 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+13: 00007FF66322AC5C uv_timer_set_repeat+129708
+22: 00007FF663366B0C 
+13: 00007FF66336B9E1 
+21: 000001DCCB18F64D 
+
+23: 00007FF662DEA1AB 
+14: 00007FF6633F46A3 
+14: 00007FF66294F02E v8::V8::GetVersion+102958
+FATAL ERROR: Zone Allocation failed - process out of memory
+24: 000002359FE7733A 
+15: 00007FF6627D6460 
+15: 00007FF663418A58 v8::String::ValueView::ValueView+456
+----- Native stack trace -----
+16: 00007FF6627D7012 
+16: 00007FF6625C2DBB SSL_COMP_get_id+298059
+
+17: 00007FF6627D9096 
+17: 00007FF6625C3109 SSL_COMP_get_id+298905
+ 1: 00007FF6627A7F8F node::OnFatalError+1343
+18: 000001D79FDCF64D 
+18: 00007FF66271DACC node::MultiIsolatePlatform::DisposeIsolate+142620
+ 2: 00007FF6633EB1E7 v8::Function::NewInstance+423
+19: 0000020B9FDCF64D 
+ 3: 00007FF662D65FC6 v8::SnapshotCreator::GetIsolate+56566
+ 4: 00007FF662E04A5D llhttp_get_errno+349
+ 5: 00007FF662EA6D1E EC_KEY_METHOD_set_verify+300382
+ 6: 00007FF662EB97EC EC_KEY_METHOD_set_verify+376876
+ 7: 00007FF662E98D75 EC_KEY_METHOD_set_verify+243125
+ 8: 00007FF662EA197B EC_KEY_METHOD_set_verify+278971
+ 9: 00007FF662EA0E7A EC_KEY_METHOD_set_verify+276154
+10: 00007FF662E94577 EC_KEY_METHOD_set_verify+224695
+11: 00007FF662E93744 EC_KEY_METHOD_set_verify+221060
+12: 00007FF662E92A32 EC_KEY_METHOD_set_verify+217714
+13: 00007FF662E926DA EC_KEY_METHOD_set_verify+216858
+14: 00007FF662E8DD09 EC_KEY_METHOD_set_verify+197961
+15: 00007FF663368BDF EVP_MD_CTX_set_update_fn+240863
+16: 00007FF66336B9E1 EVP_MD_CTX_set_update_fn+252641
+17: 00007FF6633F46A3 v8::ScriptCompiler::CompileFunction+1011
+18: 00007FF6627D6460 node::GetCurrentEnvironment+97488
+19: 00007FF6627D7012 node::GetCurrentEnvironment+100482
+20: 00007FF6627D9096 node::GetCurrentEnvironment+108806
+21: 000002345F78F64D 
+
+<--- Last few GCs --->
+
+
+<--- Last few GCs --->
+[15460:00000241B4166000]      113 ms: Scavenge 8.7 (11.8) -> 7.4 (11.5) MB, pooled: 0 MB, 1.11 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+[15460:00000241B4166000]      155 ms: Scavenge 9.4 (12.3) -> 8.8 (17.3) MB, pooled: 0 MB, 1.40 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[90872:0000024E9C126000]       56 ms: Scavenge 5.3 (7.9) -> 5.3 (8.2) MB, pooled: 1 MB, 0.60 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+[90872:0000024E9C126000]       66 ms: Scavenge 7.1 (9.0) -> 6.1 (10.2) MB, pooled: 0 MB, 0.76 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[90872:0000024E9C126000]      139 ms: Scavenge 9.0 (11.8) -> 8.2 (12.8) MB, pooled: 0 MB, 1.29 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+FATAL ERROR: Zone Allocation failed - process out of memory
+
+----- Native stack trace -----
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+ 1: 00007FF6627A7F8F node::OnFatalError+1343
+
+ 2: 00007FF6633EB1E7 v8::Function::NewInstance+423
+ 1: 00007FF6627A7F8F 
+ 3: 00007FF662D65FC6 v8::SnapshotCreator::GetIsolate+56566
+ 2: 00007FF6633EB1E7 
+ 4: 00007FF662B9458E SSL_CTX_get_client_CA_list+29726
+ 3: 00007FF662D65FC6 
+ 5: 00007FF662BC8A86 SSL_CTX_get_client_CA_list+243990
+ 4: 00007FF6633D2256 
+ 6: 00007FF662BC7F6E SSL_CTX_get_client_CA_list+241150
+ 5: 00007FF6633D2657 
+ 7: 00007FF662BDB4D1 SSL_CTX_get_client_CA_list+320353
+ 6: 00007FF662E7B7ED 
+ 8: 00007FF662BB0335 SSL_CTX_get_client_CA_list+143813
+ 7: 00007FF662E7B0A3 
+ 9: 00007FF662BCBA62 SSL_CTX_get_client_CA_list+256242
+ 8: 00007FF662E7F1FB 
+10: 00007FF662BDD126 SSL_CTX_get_client_CA_list+327606
+ 9: 00007FF662E7E6C3 
+11: 00007FF662BDDF27 SSL_CTX_get_client_CA_list+331191
+10: 00007FF662E7E164 
+12: 00007FF662BF22FA SSL_CTX_get_client_CA_list+414090
+
+11: 00007FF662E7A65B 
+13: 00007FF662BC6F3B SSL_CTX_get_client_CA_list+237003
+<--- Last few GCs --->
+12: 00007FF662E7F26A 
+14: 00007FF662BC6B12 SSL_CTX_get_client_CA_list+235938
+[91628:000002019CEB2000]       80 ms: Scavenge 5.9 (7.2) -> 5.3 (9.9) MB, pooled: 0 MB, 0.93 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+13: 00007FF662E7E6C3 
+15: 00007FF662BC8AC5 SSL_CTX_get_client_CA_list+244053
+
+
+14: 00007FF662E7D11A 
+16: 00007FF662BC7F6E SSL_CTX_get_client_CA_list+241150
+FATAL ERROR: AlignedAlloc Allocation failed - process out of memory
+<--- Last few GCs --->
+15: 00007FF662E893C1 
+17: 00007FF662BDB4D1 SSL_CTX_get_client_CA_list+320353
+
+
+----- Native stack trace -----
+
+16: 00007FF662E789A1 
+18: 00007FF662BB0335 SSL_CTX_get_client_CA_list+143813
+<--- Last few GCs --->
+<--- Last few GCs --->
+
+[92168:0000015CAC5D6000]       99 ms: Scavenge 8.7 (11.8) -> 7.4 (11.3) MB, pooled: 0 MB, 1.38 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+17: 00007FF662E77F0D 
+19: 00007FF662BCBA62 SSL_CTX_get_client_CA_list+256242
+
+
+[92168:0000015CAC5D6000]      144 ms: Scavenge 9.4 (12.3) -> 8.8 (17.3) MB, pooled: 0 MB, 1.31 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 1: 00007FF6627A7F8F node::OnFatalError+1343
+18: 00007FF662E840EB 
+20: 00007FF662BDD126 SSL_CTX_get_client_CA_list+327606
+[19232:000001B928498000]      115 ms: Scavenge 8.7 (11.8) -> 7.5 (11.5) MB, pooled: 0 MB, 1.64 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[89816:000002013EA79000]      103 ms: Scavenge 8.7 (11.8) -> 7.4 (11.5) MB, pooled: 0 MB, 1.16 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+ 2: 00007FF6633EB1E7 v8::Function::NewInstance+423
+19: 00007FF662E78682 
+[19232:000001B928498000]      154 ms: Scavenge 9.4 (12.1) -> 8.7 (13.3) MB, pooled: 0 MB, 2.18 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+21: 00007FF662BDDF27 SSL_CTX_get_client_CA_list+331191
+[89816:000002013EA79000]      169 ms: Scavenge 9.4 (12.3) -> 8.7 (13.1) MB, pooled: 0 MB, 4.60 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 3: 00007FF662D68F0E v8::internal::Version::GetSONAME+11038
+FATAL ERROR: Zone Allocation failed - process out of memory
+20: 00007FF662E77F0D 
+22: 00007FF662BF22FA SSL_CTX_get_client_CA_list+414090
+[19232:000001B928498000]      203 ms: Scavenge 10.6 (13.3) -> 9.7 (16.1) MB, pooled: 0 MB, 0.82 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[89816:000002013EA79000]      212 ms: Scavenge 10.6 (13.3) -> 9.7 (16.3) MB, pooled: 0 MB, 0.76 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+ 4: 00007FF662EE2FAB v8::MemorySpan<v8::Local<v8::Context> const >::operator[]+82043
+----- Native stack trace -----
+21: 00007FF662E7663B 
+23: 00007FF662BC6F3B SSL_CTX_get_client_CA_list+237003
+
+
+ 5: 00007FF662EE0F9C v8::MemorySpan<v8::Local<v8::Context> const >::operator[]+73836
+
+22: 00007FF662E75976 
+24: 00007FF662C3F0A6 SSL_CTX_get_client_CA_list+728886
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+ 6: 00007FF6632266F7 uv_timer_set_repeat+111943
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+ 1: 00007FF6627A7F8F 
+23: 00007FF662EA04D8 
+25: 00007FF662C3DDC0 SSL_CTX_get_client_CA_list+724048
+----- Native stack trace -----
+ 7: 00007FF6633E17E1 EVP_MD_CTX_set_update_fn+735457
+----- Native stack trace -----
+ 2: 00007FF6633EB1E7 
+24: 00007FF662E944F0 
+26: 00007FF662C3BBBA SSL_CTX_get_client_CA_list+715338
+
+ 8: 00007FF6633E248B EVP_MD_CTX_set_update_fn+738699
+
+ 3: 00007FF662D65FC6 
+25: 00007FF662EB8A73 
+27: 00007FF66335EE6F EVP_MD_CTX_set_update_fn+200559
+ 1: 00007FF6627A7F8F 
+ 9: 00007FF662E92F9E EC_KEY_METHOD_set_verify+219102
+ 1: 00007FF6627A7F8F 
+ 4: 00007FF66292728A 
+26: 00007FF662E98EE4 
+28: 00007FF662C3D69B SSL_CTX_get_client_CA_list+722219
+ 2: 00007FF6633EB1E7 
+10: 00007FF662E926DA EC_KEY_METHOD_set_verify+216858
+ 2: 00007FF6633EB1E7 
+ 5: 00007FF663FBCBC2 
+27: 00007FF662EA197B 
+29: 00007FF663BBD14F v8::base::SysInfo::AddressSpaceEnd+3167
+ 3: 00007FF6631EBA97 
+11: 00007FF662E8DD09 EC_KEY_METHOD_set_verify+197961
+ 3: 00007FF6631EBA97 
+ 6: 00007FF663FBC0FB 
+28: 00007FF662EA0E7A 
+30: 00007FF6626F814E node::GetNodeReport+89326
+
+
+ 4: 00007FF6631844BB 
+12: 00007FF663368BDF EVP_MD_CTX_set_update_fn+240863
+ 4: 00007FF6631844BB 
+ 7: 00007FF663FBB5BD 
+29: 00007FF662E94577 
+31: 00007FF663440556 uv_thread_detach+150
+<--- Last few GCs --->
+<--- Last few GCs --->
+ 5: 00007FF6631AC82A 
+13: 00007FF66336B9E1 EVP_MD_CTX_set_update_fn+252641
+ 5: 00007FF66315BF0E 
+ 8: 00007FF663FBB094 
+30: 00007FF662E93744 
+32: 00007FF6646814F3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2903923
+
+
+ 6: 00007FF6631EDE76 
+14: 00007FF6633F46A3 v8::ScriptCompiler::CompileFunction+1011
+ 6: 00007FF6631EE532 
+ 9: 00007FF663FBA621 
+31: 00007FF662E92A32 
+33: 00007FFFE56B259D BaseThreadInitThunk+29
+
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+ 7: 00007FF6631ED4C6 
+15: 00007FF6627D6460 node::GetCurrentEnvironment+97488
+ 7: 00007FF6631ED4E7 
+10: 00007FF663FBA37F 
+32: 00007FF662E926DA 
+34: 00007FFFE5B4AF78 RtlUserThreadStart+40
+
+----- Native stack trace -----
+ 8: 00007FF6631FE452 
+16: 00007FF6627D7012 node::GetCurrentEnvironment+100482
+ 8: 00007FF6631FE452 
+11: 00007FF663DC6DB6 
+33: 00007FF662E8DD09 
+#
+
+ 9: 00007FF6631FDF7B 
+17: 00007FF6627D9096 node::GetCurrentEnvironment+108806
+ 9: 00007FF6631FDF7B 
+12: 00007FF663DBF626 
+34: 00007FF663368BDF 
+# Fatal JavaScript out of memory: MemoryChunk allocation failed during deserialization.
+10: 00007FF664665D2D 
+ 1: 00007FF6627A7F8F node::OnFatalError+1343
+18: 00000201D550F64D 
+10: 00007FF664665D2D 
+13: 00007FF663DBEAA0 
+35: 00007FF66336B9E1 
+#
+11: 00007FF6631E9560 
+ 2: 00007FF6633EB1E7 v8::Function::NewInstance+423
+11: 00007FF6631E9560 
+14: 00007FF66335EE6F 
+36: 00007FF6633F46A3 
+----- Native stack trace -----
+12: 00007FF66320FC46 
+ 3: 00007FF6631EBA97 v8::base::AddressSpaceReservation::AddressSpaceReservation+322071
+12: 00007FF663203DEA 
+15: 00007FF663323EFD 
+37: 00007FF6627C3823 
+
+13: 00007FF66322A426 
+ 4: 00007FF6631844BB v8::Platform::SystemClockTimeMillis+491051
+13: 00007FF66320FBC8 
+16: 00007FF663323BF5 
+
+
+38: 00007FF6627C1FBD 
+
+ 1: 00007FF6626FC28D 
+14: 00007FF66322A2B8 
+ 5: 00007FF6631AC82A v8::base::AddressSpaceReservation::AddressSpaceReservation+63402
+14: 00007FF66322AED5 
+17: 00007FF663BBD14F 
+<--- Last few GCs --->
+<--- Last few GCs --->
+39: 0000024ED3FCF64D 
+<--- Last few GCs --->
+ 2: 00007FF663B49576 
+15: 00007FF662EE0E60 
+ 6: 00007FF6631EDE76 v8::base::AddressSpaceReservation::AddressSpaceReservation+331254
+15: 00007FF66322AE3C 
+18: 00007FF6626F814E 
+[91408:000002466C2AF000]       79 ms: Scavenge 5.9 (7.2) -> 5.3 (9.9) MB, pooled: 0 MB, 1.31 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+ 3: 00007FF6633EB1C6 
+16: 00007FF6632266F7 
+ 7: 00007FF6631ED4C6 v8::base::AddressSpaceReservation::AddressSpaceReservation+328774
+16: 00007FF663211D19 
+19: 00007FF663440556 
+
+[7116:0000022ED1211000]      113 ms: Scavenge 8.7 (11.8) -> 7.4 (11.3) MB, pooled: 0 MB, 1.69 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[91616:0000022F8C406000]      118 ms: Mark-Compact 7.8 (10.7) -> 6.3 (11.2) MB, pooled: 0 MB, 4.84 / 0.00 ms  (average mu = 0.958, current mu = 0.958) background allocation failure; GC in old space requested
+ 4: 00007FF6631EBA97 
+17: 00007FF6633E17E1 
+ 8: 00007FF6631FE452 v8::internal::StrongRootAllocatorBase::deallocate_impl+15858
+17: 00007FF663211F12 
+20: 00007FF6646814F3 
+FATAL ERROR: NewSpace::EnsureCurrentCapacity Allocation failed - JavaScript heap out of memory
+
+
+ 5: 00007FF66319DCEA 
+18: 00007FF6633E248B 
+ 9: 00007FF6631FDF7B v8::internal::StrongRootAllocatorBase::deallocate_impl+14619
+18: 00007FF6633EAFE2 
+21: 00007FFFE56B259D 
+----- Native stack trace -----
+FATAL ERROR: MarkCompactCollector: young object promotion failed Allocation failed - JavaScript heap out of memory
+FATAL ERROR: MarkCompactCollector: young object promotion failed Allocation failed - JavaScript heap out of memory
+ 6: 00007FF66319DDAC 
+19: 00007FF662E92F9E 
+10: 00007FF664665D2D v8::base::UnsignedDivisionByConstant<unsigned __int64>+2791341
+19: 00007FF662782875 
+22: 00007FFFE5B4AF78 
+
+----- Native stack trace -----
+----- Native stack trace -----
+ 7: 00007FF66319E69B 
+20: 00007FF662E926DA 
+11: 00007FF6631E9560 v8::base::AddressSpaceReservation::AddressSpaceReservation+312544
+20: 000002017744F64D 
+ 1: 00007FF6627A7F8F 
+
+
+ 8: 00007FF6631758F1 
+21: 00007FF662E8DD09 
+12: 00007FF663203DEA X509_STORE_set_cleanup+5098
+ 2: 00007FF6633EB1E7 
+ 1: 00007FF6627A7F8F 
+ 1: 00007FF6627A7F8F node::OnFatalError+1343
+ 9: 00007FF6631DB7A3 
+22: 00007FF663368BDF 
+13: 00007FF663214E35 uv_timer_set_repeat+40069
+ 3: 00007FF6631EBA97 
+ 2: 00007FF6633EB1E7 
+ 2: 00007FF6633EB1E7 v8::Function::NewInstance+423
+10: 00007FF6631DB50E 
+23: 00007FF66336B9E1 
+14: 00007FF663221F72 uv_timer_set_repeat+93634
+ 4: 00007FF6631AC533 
+ 3: 00007FF6631EBA97 
+ 3: 00007FF6631EBA97 v8::base::AddressSpaceReservation::AddressSpaceReservation+322071
+11: 00007FF6631DA2F8 
+24: 00007FF6633F46A3 
+15: 00007FF66310E04D v8::Platform::SystemClockTimeMillis+6589
+ 5: 00007FF6631EDE9A 
+ 4: 00007FF6631CB3AE 
+ 4: 00007FF6631CB3AE v8::base::AddressSpaceReservation::AddressSpaceReservation+189230
+12: 00007FF6631DA27A 
+25: 00007FF6627C3823 
+16: 00007FF66310DDC4 v8::Platform::SystemClockTimeMillis+5940
+ 6: 00007FF6631ED4C6 
+ 5: 00007FF6631C0A6D 
+ 5: 00007FF6631C0A6D v8::base::AddressSpaceReservation::AddressSpaceReservation+145901
+13: 00007FF663203D15 
+26: 00007FF6627C1FBD 
+17: 00007FF663408ECC v8::V8::GetSharedMemoryStatistics+1836
+ 7: 00007FF6631FE452 
+ 6: 00007FF6631C071C 
+ 6: 00007FF6631C071C v8::base::AddressSpaceReservation::AddressSpaceReservation+145052
+14: 00007FF662DA1888 
+27: 000001B96074F64D 
+18: 00007FF6634094A6 v8::Context::FromSnapshot+166
+ 8: 00007FF6631FDF7B 
+ 7: 00007FF6631C0361 
+ 7: 00007FF6631C0361 v8::base::AddressSpaceReservation::AddressSpaceReservation+144097
+15: 00007FF662D9F65C 
+19: 00007FF6626120E4 RSA_meth_get_flags+209572
+ 9: 00007FF664665D2D 
+ 8: 00007FF6631D2858 
+ 8: 00007FF6631D2648 v8::base::AddressSpaceReservation::AddressSpaceReservation+218568
+16: 00007FF662DA5306 
+20: 00007FF66261BE00 RSA_meth_get_flags+249792
+10: 00007FF6631E9560 
+ 9: 00007FF663BBD14F 
+ 9: 00007FF663BBCA6D v8::base::SysInfo::AddressSpaceEnd+1405
+17: 00007FF662DA0348 
+21: 00007FF663440556 uv_thread_detach+150
+11: 00007FF66320ECF0 
+10: 00007FF6626F814E 
+10: 00007FF663BBCD82 v8::base::SysInfo::AddressSpaceEnd+2194
+18: 00007FF662D9F83E 
+22: 00007FF6646814F3 v8::base::UnsignedDivisionByConstant<unsigned __int64>+2903923
+12: 00007FF66322340D 
+11: 00007FF663440556 
+11: 00007FF6631C33A4 v8::base::AddressSpaceReservation::AddressSpaceReservation+156452
+19: 00007FF662DA5306 
+23: 00007FFFE56B259D BaseThreadInitThunk+29
+13: 00007FF6631435F8 
+12: 00007FF6646814F3 
+12: 00007FF6631AAACD v8::base::AddressSpaceReservation::AddressSpaceReservation+55885
+20: 00007FF662DA0348 
+24: 00007FFFE5B4AF78 RtlUserThreadStart+40
+14: 00007FF663134695 
+13: 00007FFFE56B259D 
+13: 00007FF6631A4B44 v8::base::AddressSpaceReservation::AddressSpaceReservation+31428
+21: 00007FF662D9F83E 
+15: 00007FF6631343B5 
+14: 00007FFFE5B4AF78 
+14: 00007FF6631EDE9A v8::base::AddressSpaceReservation::AddressSpaceReservation+331290
+22: 00007FF662DA5306 
+16: 00007FF66313C91F 
+15: 00007FF6631ED4C6 v8::base::AddressSpaceReservation::AddressSpaceReservation+328774
+17: 0000024627E7733A 
+23: 00007FF662DA0348 
+16: 00007FF6631FE452 v8::internal::StrongRootAllocatorBase::deallocate_impl+15858
+24: 00007FF662D9F83E 
+17: 00007FF6631FDF7B v8::internal::StrongRootAllocatorBase::deallocate_impl+14619
+25: 00007FF662DA5306 
+18: 00007FF664665D2D v8::base::UnsignedDivisionByConstant<unsigned __int64>+2791341
+26: 00007FF662DA0348 
+19: 00007FF6631E9560 v8::base::AddressSpaceReservation::AddressSpaceReservation+312544
+27: 00007FF662D9F83E 
+20: 00007FF663203DEA X509_STORE_set_cleanup+5098
+28: 00007FF662DA5306 
+21: 00007FF66320FBC8 uv_timer_set_repeat+18968
+29: 00007FF662DA0348 
+22: 00007FF66322A426 uv_timer_set_repeat+127606
+30: 00007FF662D9F83E 
+23: 00007FF663212FEF uv_timer_set_repeat+32319
+31: 00007FF662DA68DE 
+24: 00007FF662EE4579 v8::MemorySpan<v8::Local<v8::Context> const >::operator[]+87625
+32: 00007FF662DA008D 
+25: 00007FF662EE3529 v8::MemorySpan<v8::Local<v8::Context> const >::operator[]+83449
+33: 00007FF6631F3A58 
+26: 00007FF662EE3344 v8::MemorySpan<v8::Local<v8::Context> const >::operator[]+82964
+34: 00007FF662D7E573 
+27: 00007FF662DD90B1 v8::String::Value::~Value+102401
+35: 00007FF66328685C 
+28: 0000022FC433733A 
+36: 00007FF663286C52 
+37: 00007FF662D841B3 
+
+38: 00007FF6634163A6 
+
+39: 00007FF6628B0A3D 
+#
+40: 00007FF662612B84 
+# Fatal process out of memory: Re-embedded builtins: set permissions
+41: 00007FF662611F19 
+#
+42: 00007FF66261BE00 
+----- Native stack trace -----
+43: 00007FF663440556 
+
+44: 00007FF6646814F3 
+ 1: 00007FF6626FC28D 
+45: 00007FFFE56B259D 
+ 2: 00007FF663B49576 
+46: 00007FFFE5B4AF78 
+ 3: 00007FF6633EB1C6 
+ 4: 00007FF6632522AE 
+ 5: 00007FF6632857BF 
+ 6: 00007FF663286272 
+ 7: 00007FF663286C52 
+ 8: 00007FF662D841B3 
+ 9: 00007FF6634163A6 
+10: 00007FF6628B0A3D 
+11: 00007FF662612B84 
+12: 00007FF662611F19 
+13: 00007FF66261BE00 
+14: 00007FF663440556 
+15: 00007FF6646814F3 
+16: 00007FFFE56B259D 
+17: 00007FFFE5B4AF78 
+memory allocation of 16777216 bytes failed
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
