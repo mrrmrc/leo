@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "npm run build && node deploy.js"
   },
   "dependencies": {
     "@ai-sdk/openai": "^0.0.14",
@@ -31,6 +32,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
+    "ftp-deploy": "^2.4.7",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
