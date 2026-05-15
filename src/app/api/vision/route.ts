@@ -1,52 +1,83 @@
+// src/app/api/vision/route.ts
 import { openai } from '@ai-sdk/openai';
-import { generateText } from 'ai';
+import { generateObject } from 'ai';
 import { supabase } from '@/lib/supabase';
-import { generateSystemPrompt } from '@/lib/ai/prompts';
-import { NextRequest, NextResponse } from 'next/server';
+import { generateVisionPrompt } from '@/lib/ai/prompts';
+import { NextRequest } from 'next/server';
+import { ChildProfile } from '@/types';
+import { z } from 'zod';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
+
+function buildFallbackVisionReply(task: string) {
+  return {
+    message: `Sto ancora aiutandoti con questa missione: ${task}. Per adesso guardiamo una cosa alla volta: colore, forma e posizione. Se vuoi, scatta una nuova immagine piu vicina.`,
+    objectFound: false,
+    safetyWarning: '',
+  };
+}
 
 export async function POST(req: NextRequest) {
+  const { image, childId, task } = await req.json();
+
+  if (!childId || !image) {
+    return new Response('Child ID and image are required', { status: 400 });
+  }
+
+  // 1. Fetch profile
+  let profile: ChildProfile | null = null;
+  if (childId.startsWith('mock-')) {
+    profile = {
+      id: childId,
+      name: childId === 'mock-1' ? 'Giulio' : 'Sofia',
+      age: childId === 'mock-1' ? 6 : 4,
+      diagnosis: childId === 'mock-1' ? 'Ritardo del linguaggio' : 'Autismo lieve',
+      special_interests: childId === 'mock-1' ? 'Dinosauri' : 'Musica',
+      communication_level: childId === 'mock-1' ? 'basic' : 'non-verbal',
+      has_adhd: childId === 'mock-1',
+      has_autism: childId === 'mock-2'
+    };
+  } else {
+    const { data } = await supabase
+      .from('child_profiles')
+      .select('*')
+      .eq('id', childId)
+      .single();
+    profile = data;
+  }
+
+  if (!profile) return new Response('Profile not found', { status: 404 });
+
+  // 2. Build instructions
+  const systemPrompt = generateVisionPrompt(profile, task);
+
+  if (!process.env.OPENAI_API_KEY) {
+    return Response.json(buildFallbackVisionReply(task));
+  }
+
+  // 3. Analyze image with GPT-4o Vision
   try {
-      const { image, childId, history } = await req.json();
+    const result = await generateObject({
+      model: openai('gpt-4o'),
+      schema: z.object({
+        message: z.string().describe('Gentle, supportive feedback for the child based on what is seen'),
+        objectFound: z.boolean().describe('Whether the target object was identified'),
+        safetyWarning: z.string().optional().describe('Any immediate safety concern (e.g., sharp object nearby)')
+      }),
+      system: systemPrompt,
+      messages: [
+        {
+          role: 'user',
+          content: [
+            { type: 'text', text: `Sto guardando questo. Ho trovato ${task}?` },
+            { type: 'image', image }
+          ],
+        },
+      ],
+    });
 
-      if (!childId || !image) {
-        return new NextResponse('Child ID and image are required', { status: 400 });
-      }
-
-      // Retrieve child profile
-      const { data: childProfile, error } = await supabase
-        .from('child_profiles')
-        .select('*')
-        .eq('id', childId)
-        .single();
-
-      if (error || !childProfile) {
-        return new NextResponse('Child not found', { status: 404 });
-      }
-
-      const basePrompt = generateSystemPrompt(childProfile);
-      const visionPrompt = `${basePrompt}\n\nMODALITÀ VISIONE (Es. Supermercato, Cucina):\nOra stai guardando attraverso la fotocamera del bambino. Descrivi in modo semplice cosa vedi, fai una domanda o proponi un piccolo gioco/esercizio basato su ciò che vedi (es. "Vedo delle mele rosse! Riusciamo a trovare qualcosa di giallo?"). Ricorda di essere sempre incoraggiante e usare frasi brevi.`;
-
-      const result = await generateText({
-        model: openai('gpt-4o'),
-        system: visionPrompt,
-        messages: [
-            ...history.map((m: { role: string; content: string }) => ({ role: m.role as "user" | "assistant", content: m.content })),
-            {
-                role: 'user',
-                content: [
-                    { type: 'text', text: 'Cosa vedi in questa immagine? Guidami!' },
-                    { type: 'image', image: image } // The base64 data URL from react-webcam
-                ]
-            }
-        ],
-        temperature: 0.7,
-      });
-
-      return NextResponse.json({ reply: result.text });
-  } catch (error) {
-      console.error("Error in Vision API:", error);
-      return new NextResponse('Internal Server Error', { status: 500 });
+    return Response.json(result.object);
+  } catch {
+    return Response.json(buildFallbackVisionReply(task));
   }
 }

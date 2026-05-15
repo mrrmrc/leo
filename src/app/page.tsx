@@ -1,97 +1,138 @@
+// src/app/page.tsx
 'use client';
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { supabase } from '@/lib/supabase';
+import { motion } from 'framer-motion';
 
-export default function LoginPage() {
-  const [username, setUsername] = useState('');
+export default function LandingPage() {
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
+  const [isRegistering, setIsRegistering] = useState(false);
   const router = useRouter();
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleAuth = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
 
-    // Mock Authentication
-    if (username === 'duemme.mail@gmail.com' && password === '!LEIbniz2018') {
-      localStorage.setItem('leo_user_role', 'parent');
+    // 1. Check for Mock Credentials (as requested by user)
+    if (!isRegistering) {
+      if (email === 'admin' && password === '!LEIbniz2018') {
+        localStorage.setItem('leo_mock_user', 'admin');
+        localStorage.setItem('leo_user_role', 'admin');
+        router.push('/admin');
+        return;
+      }
+
+      if (email === 'medico' && password === 'medico') {
+        localStorage.setItem('leo_mock_user', 'medico');
+        localStorage.setItem('leo_user_role', 'expert');
+        router.push('/expert');
+        return;
+      }
+      
+      if (email === 'duemme.mail@gmail.com' && password === '!LEIbniz2018') {
+        localStorage.setItem('leo_mock_user', email);
+        localStorage.setItem('leo_user_role', 'parent');
+        router.push('/dashboard');
+        return;
+      }
+    }
+    
+    // 2. Fallback to real Supabase Auth
+    const { error: authError } = isRegistering 
+      ? await supabase.auth.signUp({ email, password })
+      : await supabase.auth.signInWithPassword({ email, password });
+
+    if (authError) {
+      setError(authError.message);
+    } else {
       router.push('/dashboard');
-      return;
     }
-
-    if (username === 'medico' && password === 'medico') {
-      localStorage.setItem('leo_user_role', 'expert');
-      router.push('/expert');
-      return;
-    }
-
-    setError('Credenziali non valide. Riprova.');
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-blue-900 via-blue-100 to-blue-900 px-4">
-      <div className="absolute inset-0 bg-white/20 backdrop-blur-3xl"></div>
-      
-      <div className="relative z-10 w-full max-w-md p-8 bg-white/70 backdrop-blur-lg rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-white/50">
-        <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-600 text-white mb-4 shadow-lg shadow-blue-500/30">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
-            </svg>
-          </div>
-          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-            Portale LEO
+    <div className="min-h-screen bg-white text-blue-900 overflow-hidden">
+      {/* Hero Section */}
+      <main className="relative pt-20 pb-32 px-6 flex flex-col items-center text-center">
+        <motion.div 
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center text-5xl leo-float shadow-2xl mb-8"
+        >
+          🦁
+        </motion.div>
+        
+        <motion.h1 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="text-6xl font-extrabold tracking-tighter mb-4"
+        >
+          Ciao, sono Leo!
+        </motion.h1>
+        
+        <motion.p 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+          className="text-xl text-soft max-w-md mb-12"
+        >
+          L&apos;amico intelligente che aiuta il tuo bambino a crescere, parlare e scoprire il mondo.
+        </motion.p>
+
+        {/* Auth Card */}
+        <motion.div 
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          className="glass-card w-full max-w-md p-10 shadow-2xl"
+        >
+          <h2 className="text-2xl font-bold mb-6">
+            {isRegistering ? 'Crea un account genitore' : 'Accedi all\'area riservata'}
           </h2>
-          <p className="mt-2 text-sm text-gray-600 font-medium">
-            Accesso riservato a genitori ed esperti
-          </p>
-        </div>
-
-        <form className="space-y-6" onSubmit={handleLogin}>
-          {error && (
-            <div className="bg-red-50 text-red-600 p-3 rounded-xl text-sm text-center font-medium border border-red-100 animate-pulse">
-              {error}
-            </div>
-          )}
           
-          <div className="space-y-4">
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-1">
-                Email o Username
-              </label>
-              <input
-                type="text"
-                required
-                className="block w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all bg-white/50 focus:bg-white"
-                placeholder="es. nome@email.com o medico"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-1">
-                Password
-              </label>
-              <input
-                type="password"
-                required
-                className="block w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all bg-white/50 focus:bg-white"
-                placeholder="••••••••"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </div>
-          </div>
+          <form onSubmit={handleAuth} className="space-y-4">
+            {error && <div className="p-3 bg-red-50 text-red-600 rounded-xl text-sm font-bold">{error}</div>}
+            
+            <input 
+              type="text"
+              placeholder="Email o Nome Utente"
+              className="w-full p-4 rounded-xl border border-gray-100 bg-gray-50 focus:ring-4 focus:ring-blue-100 outline-none transition-all"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              autoComplete="username"
+              required
+            />
+            
+            <input 
+              type="password"
+              placeholder="Password"
+              className="w-full p-4 rounded-xl border border-gray-100 bg-gray-50 focus:ring-4 focus:ring-blue-100 outline-none transition-all"
+              value={password}
+              onChange={e => setPassword(e.target.value)}
+              autoComplete={isRegistering ? 'new-password' : 'current-password'}
+              required
+            />
 
-          <button
-            type="submit"
-            className="w-full flex justify-center py-3.5 px-4 border border-transparent rounded-xl shadow-lg text-sm font-bold text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all hover:scale-[1.02] active:scale-95"
+            <button type="submit" className="btn-leo btn-leo-primary w-full text-lg mt-4">
+              {isRegistering ? 'Inizia Ora' : 'Entra'}
+            </button>
+          </form>
+
+          <button 
+            onClick={() => setIsRegistering(!isRegistering)}
+            className="mt-6 text-sm font-bold text-blue-500 hover:text-blue-700 transition-colors"
           >
-            Accedi all'area riservata
+            {isRegistering ? 'Hai già un account? Accedi' : 'Non hai un account? Registrati'}
           </button>
-        </form>
-      </div>
+        </motion.div>
+      </main>
+
+      {/* Decorative Background */}
+      <div className="fixed -bottom-20 -left-20 w-80 h-80 bg-blue-50 rounded-full blur-3xl opacity-50 -z-10"></div>
+      <div className="fixed -top-20 -right-20 w-80 h-80 bg-green-50 rounded-full blur-3xl opacity-50 -z-10"></div>
     </div>
   );
 }

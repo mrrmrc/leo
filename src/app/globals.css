@@ -1,26 +1,75 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-primary: #3b82f6; /* Soft Blue */
+  --color-brand-secondary: #10b981; /* Mentha Green */
+  --color-brand-accent: #f59e0b; /* Sunny Amber */
+  --color-brand-soft: #eff6ff;
+  
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #1e293b;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Accessible & Child-friendly touches */
+.btn-leo {
+  @apply px-6 py-4 rounded-2xl font-bold transition-all active:scale-95 shadow-lg;
+}
+
+.btn-leo-primary {
+  @apply bg-brand-primary text-white shadow-blue-500/20 hover:bg-blue-600;
+}
+
+.btn-leo-secondary {
+  @apply bg-brand-secondary text-white shadow-green-500/20 hover:bg-green-600;
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-lg border border-white/50 shadow-xl rounded-3xl;
+}
+
+/* Animations for Leo's presence */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.leo-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Mobile-first Navigation */
+.mobile-nav {
+  @apply fixed bottom-0 left-0 right-0 h-20 bg-white/90 backdrop-blur-md border-t border-gray-100 flex items-center justify-around px-6 z-50;
+}
+
+.nav-item {
+  @apply flex flex-col items-center gap-1 text-xs font-medium text-gray-400 transition-colors;
+}
+
+.nav-item.active {
+  @apply text-brand-primary;
+}
+
+/* Typography for clarity */
+h1, h2, h3 {
+  @apply tracking-tight font-extrabold;
+}
+
+.text-soft {
+  @apply text-gray-500 leading-relaxed;
 }

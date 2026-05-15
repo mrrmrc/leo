@@ -14,6 +14,15 @@ export default function Login() {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
+
+    // Mock Login for Demo
+    if (email === 'genitore@leo.it' && password === 'leo2024') {
+      localStorage.setItem('leo_user_role', 'parent');
+      localStorage.setItem('leo_user_email', email);
+      router.push('/dashboard');
+      return;
+    }
+
     const { error } = await supabase.auth.signInWithPassword({
       email,
       password,
@@ -22,6 +31,7 @@ export default function Login() {
     if (error) {
       setError(error.message);
     } else {
+      localStorage.setItem('leo_user_email', email);
       router.push('/dashboard');
     }
   };

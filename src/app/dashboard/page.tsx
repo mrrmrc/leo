@@ -1,129 +1,131 @@
+// src/app/dashboard/page.tsx
 'use client';
 
 import { useEffect, useState } from 'react';
 import { supabase } from '@/lib/supabase';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import PedagogicalForm from '@/components/PedagogicalForm';
 
-import type { User } from '@supabase/supabase-js';
-
-export default function Dashboard() {
-  const [user, setUser] = useState<User | null>(null);
-  const [childProfiles, setChildProfiles] = useState<{ id: string; name: string; age: number; parent_id: string }[]>([]);
+export default function ParentDashboard() {
+  const [children, setChildren] = useState<any[]>([]);
+  const [showForm, setShowForm] = useState(false);
+  const [loading, setLoading] = useState(true);
   const router = useRouter();
 
-  useEffect(() => {
-    const fetchUserAndProfiles = async () => {
-      // Mock Authentication Check
-      const role = localStorage.getItem('leo_user_role');
-      if (role !== 'parent') {
-        router.push('/');
-        return;
-      }
-      
-      // Mock User
-      setUser({ id: 'mock-parent-id', email: 'duemme.mail@gmail.com' } as User);
+  const fetchData = async () => {
+    setLoading(true);
+    
+    // Check for Mock User first
+    const mockUserEmail = localStorage.getItem('leo_user_email');
+    const stored = localStorage.getItem('leo_mock_children');
+    let mockChildren = stored ? JSON.parse(stored) : [];
 
-      // Mock Profiles (since no Supabase is available right now)
-      setChildProfiles([
-        { id: '1', name: 'Giulio', age: 6, parent_id: 'mock-parent-id' },
-        { id: '2', name: 'Sofia', age: 4, parent_id: 'mock-parent-id' }
-      ]);
-    };
-
-    fetchUserAndProfiles();
-  }, [router]);
-
-  const handleLogout = async () => {
-    localStorage.removeItem('leo_user_role');
-    router.push('/');
+    if (mockUserEmail) {
+      // Filter children by parent_email if we have a logged in email
+      mockChildren = mockChildren.filter((c: any) => c.parent_email === mockUserEmail || !c.parent_email);
+    }
+    
+    setChildren(mockChildren);
+    setLoading(false);
   };
 
-  if (!user) {
-    return <div className="flex justify-center items-center h-screen">Caricamento...</div>;
-  }
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  if (loading) return <div className="flex h-screen items-center justify-center font-bold text-blue-600">Leo sta preparando la cameretta... 🧸</div>;
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <nav className="bg-white shadow-sm">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex h-16 justify-between items-center">
-            <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-blue-600">Leo - Area Genitori</h1>
-            </div>
-            <div>
-              <button
-                onClick={handleLogout}
-                className="text-gray-500 hover:text-gray-700 font-medium"
+    <div className="min-h-screen bg-brand-soft pb-32">
+      <header className="p-8 bg-white/50 backdrop-blur-md">
+        <h1 className="text-4xl font-extrabold text-blue-900">Bentornato! 👋</h1>
+        <p className="text-soft mt-1">Ecco come sta crescendo il tuo piccolo.</p>
+      </header>
+
+      <main className="p-8 max-w-4xl mx-auto">
+        {showForm ? (
+          <div>
+            <button onClick={() => setShowForm(false)} className="mb-6 text-sm font-bold text-blue-600 flex items-center gap-2">
+              ← Torna alla dashboard
+            </button>
+            <PedagogicalForm onSuccess={() => { setShowForm(false); fetchData(); }} />
+          </div>
+        ) : (
+          <div className="space-y-8">
+            <div className="flex justify-between items-center">
+              <h2 className="text-2xl font-bold text-blue-900">Profili Attivi</h2>
+              <button 
+                onClick={() => setShowForm(true)}
+                className="px-6 py-3 bg-white text-blue-600 rounded-2xl font-bold shadow-sm border border-blue-100 hover:bg-blue-50 transition-all"
               >
-                Esci
+                + Aggiungi bambino
               </button>
             </div>
-          </div>
-        </div>
-      </nav>
 
-      <main className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-        <div className="px-4 py-6 sm:px-0">
-          <div className="flex justify-between items-center mb-6">
-            <h2 className="text-2xl font-bold leading-tight text-gray-900">
-              Profili dei Bambini
-            </h2>
-            <Link
-              href="/dashboard/profile"
-              className="inline-flex items-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-            >
-              Aggiungi Profilo
-            </Link>
-          </div>
-
-          {childProfiles.length === 0 ? (
-            <div className="text-center bg-white p-12 rounded-lg shadow">
-              <h3 className="mt-2 text-sm font-medium text-gray-900">Nessun profilo trovato</h3>
-              <p className="mt-1 text-sm text-gray-500">
-                Inizia creando un profilo per il tuo bambino.
-              </p>
-              <div className="mt-6">
-                <Link
-                  href="/dashboard/profile"
-                  className="inline-flex items-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700"
-                >
-                  Crea Profilo
-                </Link>
+            {children.length === 0 ? (
+              <div className="glass-card p-12 text-center">
+                <div className="text-5xl mb-4">🧸</div>
+                <h3 className="text-xl font-bold mb-2">Ancora nessun profilo</h3>
+                <p className="text-soft mb-8">Crea il primo profilo per iniziare il percorso educativo con Leo.</p>
+                <button onClick={() => setShowForm(true)} className="btn-leo btn-leo-primary">
+                  Crea Profilo Ora
+                </button>
               </div>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {childProfiles.map((profile) => (
-                <div
-                  key={profile.id}
-                  className="relative flex flex-col items-center space-y-3 rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 hover:border-gray-400"
-                >
-                  <div className="flex-1 min-w-0 text-center">
-                    <span className="absolute inset-0" aria-hidden="true" />
-                    <p className="text-xl font-medium text-gray-900">{profile.name}</p>
-                    <p className="truncate text-sm text-gray-500">{profile.age} anni</p>
+            ) : (
+              <div className="grid gap-6">
+                {children.map(child => (
+                  <div key={child.id} className="glass-card p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                    <div className="flex items-center gap-4">
+                      <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-3xl shadow-inner">
+                        👶
+                      </div>
+                      <div>
+                        <h3 className="text-2xl font-bold text-blue-900">{child.name}</h3>
+                        <p className="text-soft font-medium">{child.age} anni • {child.diagnosis || 'Sviluppo generale'}</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex gap-3 w-full md:w-auto">
+                      <Link 
+                        href={`/play?childId=${child.id}`}
+                        className="flex-1 md:flex-none px-8 py-4 bg-brand-primary text-white rounded-2xl font-black text-lg text-center shadow-lg shadow-blue-500/20 active:scale-95 transition-all flex items-center justify-center gap-3"
+                      >
+                        Inizia a giocare 🦁✨
+                      </Link>
+                    </div>
                   </div>
-                  <div className="mt-4 flex flex-col w-full space-y-2">
-                     <Link
-                        href={`/chat?childId=${profile.id}`}
-                        className="w-full text-center rounded-md bg-green-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600"
-                     >
-                       Gioca con Leo
-                     </Link>
-                     <Link
-                        href={`/vision?childId=${profile.id}`}
-                        className="w-full text-center rounded-md bg-purple-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-purple-600"
-                     >
-                       Modalità Esplora
-                     </Link>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
       </main>
+
+      {/* Mobile-first Nav fallback */}
+      {!showForm && (
+        <nav className="mobile-nav">
+          <Link href="/dashboard" className="nav-item active">
+             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+            Dashboard
+          </Link>
+          <div className="nav-item opacity-40">
+             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            Progressi
+          </div>
+          <div className="nav-item opacity-40">
+             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            Impostazioni
+          </div>
+        </nav>
+      )}
     </div>
   );
 }

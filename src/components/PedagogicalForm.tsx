@@ -1,225 +1,198 @@
+// src/components/PedagogicalForm.tsx
 'use client';
 
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import * as z from 'zod';
-import { supabase } from '@/lib/supabase';
-import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
-const formSchema = z.object({
-  name: z.string().min(2, 'Il nome deve avere almeno 2 caratteri'),
-  age: z.string().or(z.number()).transform(val => Number(val)).pipe(z.number().min(1).max(18)) as unknown as z.ZodNumber,
-  diagnosis: z.string().optional(),
-  communication_level: z.string().optional(),
-
-  // Difficulties
-  phonetic_errors: z.string().optional(),
-  language_delays: z.string().optional(),
-  cognitive_difficulties: z.string().optional(),
-  adhd: z.boolean().optional().default(false),
-  autism: z.boolean().optional().default(false),
-  attention_span: z.coerce.number().optional(),
-
-  // Sensory
-  noise_hypersensitivity: z.boolean().optional().default(false),
-  visual_sensitivity: z.boolean().optional().default(false),
-  emotional_triggers: z.string().optional(),
-
-  // Strengths
-  special_interests: z.string().optional(),
-  favorite_games: z.string().optional(),
-  favorite_activities: z.string().optional(),
-  motivations: z.string().optional(),
-
-  // Goals
-  vocabulary_goals: z.string().optional(),
-  turn_taking_goals: z.string().optional(),
-  autonomy_goals: z.string().optional(),
-  emotional_regulation_goals: z.string().optional(),
-  pronunciation_goals: z.string().optional(),
-});
-
-type FormData = z.infer<typeof formSchema>;
-
-export default function PedagogicalForm() {
-  const router = useRouter();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<FormData>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      adhd: false,
-      autism: false,
-      noise_hypersensitivity: false,
-      visual_sensitivity: false,
-    }
+export default function PedagogicalForm({ onSuccess }: { onSuccess: () => void }) {
+  const [step, setStep] = useState(1);
+  const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    // Area 1
+    name: '', age: '', gender: '', family_context: '', parent_email: '',
+    // Area 2
+    pregnancy: '', birth: '', development_milestones: '',
+    // Area 3
+    diagnosis: '', qi: '', medications: '',
+    // Area 4
+    comm_modality: 'verbale', comm_evaluation: '3', vocab_size: '',
+    // Area 5
+    cognitive_attention: '3', cognitive_autonomy: '3',
+    // Area 6
+    motor_tone: '', motor_sensory: '',
+    // Area 7
+    emotions_behaviors: '', special_interests: '', triggers: '',
+    // Area 8
+    school_support: '', current_therapies: '',
+    // Area 9
+    family_cooperation: '3', family_stress: '',
+    // Area 10
+    goals_short: '', goals_medium: '', caa_tools: ''
   });
 
-  const onSubmit = async (data: FormData) => {
-    setIsSubmitting(true);
-    setError(null);
-
-    const { data: { user } } = await supabase.auth.getUser();
-
-    if (!user) {
-        setError("Devi essere loggato per salvare un profilo.");
-        setIsSubmitting(false);
-        return;
-    }
-
-    const { error: insertError } = await supabase
-      .from('child_profiles')
-      .insert([
-        {
-          parent_id: user.id,
-          ...data
-        }
-      ]);
-
-    if (insertError) {
-      setError(insertError.message);
-      setIsSubmitting(false);
-    } else {
-      router.push('/dashboard');
-    }
+  const handleSubmit = async () => {
+    setLoading(true);
+    const stored = localStorage.getItem('leo_mock_children');
+    const mockChildren = stored ? JSON.parse(stored) : [];
+    
+    const newChild = { 
+      ...formData, 
+      id: `patient-${Date.now()}`,
+      created_at: new Date().toISOString()
+    };
+    
+    localStorage.setItem('leo_mock_children', JSON.stringify([...mockChildren, newChild]));
+    
+    await new Promise(r => setTimeout(r, 1000));
+    onSuccess();
+    setLoading(false);
   };
 
+  const nextStep = () => setStep(s => s + 1);
+  const prevStep = () => setStep(s => s - 1);
+
+  const renderStepIndicator = () => (
+    <div className="flex flex-wrap gap-2 mb-8 justify-center">
+      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(s => (
+        <button 
+          key={s} 
+          onClick={() => setStep(s)}
+          className={`w-8 h-8 rounded-full text-[10px] font-bold transition-all ${step === s ? 'bg-blue-600 text-white' : step > s ? 'bg-blue-100 text-blue-600' : 'bg-gray-100 text-gray-400'}`}
+        >
+          {s}
+        </button>
+      ))}
+    </div>
+  );
+
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-8 bg-white p-8 rounded-lg shadow max-w-4xl mx-auto">
-      {error && <div className="p-4 bg-red-50 text-red-700 rounded-md">{error}</div>}
+    <div className="bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-2xl max-w-3xl mx-auto">
+      {renderStepIndicator()}
 
-      <div>
-        <h3 className="text-lg font-medium leading-6 text-gray-900">Dati Base</h3>
-        <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Nome</label>
-            <input {...register('name')} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 border" />
-            {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>}
+      <div className="min-h-[400px]">
+        {step === 1 && (
+          <div className="space-y-6 animate-in fade-in slide-in-from-right">
+            <h3 className="text-xl font-bold text-gray-900 border-b pb-2">AREA 1 — Dati Anagrafici e Familiari</h3>
+            <div className="grid grid-cols-2 gap-4">
+              <div><label className="text-xs font-bold text-gray-400 uppercase">Nome Completo</label>
+              <input className="w-full p-4 rounded-xl bg-gray-50 border-none" value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} /></div>
+              <div><label className="text-xs font-bold text-gray-400 uppercase">Età</label>
+              <input className="w-full p-4 rounded-xl bg-gray-50 border-none" type="number" value={formData.age} onChange={e => setFormData({...formData, age: e.target.value})} /></div>
+            </div>
+            <div><label className="text-xs font-bold text-gray-400 uppercase">Email Genitore (per collegamento)</label>
+            <input className="w-full p-4 rounded-xl bg-gray-50 border-none" type="email" placeholder="email@genitore.it" value={formData.parent_email} onChange={e => setFormData({...formData, parent_email: e.target.value})} /></div>
+            <div><label className="text-xs font-bold text-gray-400 uppercase">Contesto Familiare</label>
+            <textarea className="w-full p-4 rounded-xl bg-gray-50 border-none" rows={2} value={formData.family_context} onChange={e => setFormData({...formData, family_context: e.target.value})} /></div>
           </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Età</label>
-            <input type="number" {...register('age')} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 border" />
-            {errors.age && <p className="mt-1 text-sm text-red-600">{errors.age.message}</p>}
+        )}
+
+        {step === 2 && (
+          <div className="space-y-6 animate-in fade-in slide-in-from-right">
+            <h3 className="text-xl font-bold text-gray-900 border-b pb-2">AREA 2 — Anamnesi Perinatale</h3>
+            <div><label className="text-xs font-bold text-gray-400 uppercase">Gravidanza e Parto</label>
+            <textarea className="w-full p-4 rounded-xl bg-gray-50 border-none" rows={3} value={formData.pregnancy} onChange={e => setFormData({...formData, pregnancy: e.target.value})} /></div>
+            <div><label className="text-xs font-bold text-gray-400 uppercase">Tappe di Sviluppo Precoce</label>
+            <textarea className="w-full p-4 rounded-xl bg-gray-50 border-none" rows={3} value={formData.development_milestones} onChange={e => setFormData({...formData, development_milestones: e.target.value})} /></div>
           </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Diagnosi (opzionale)</label>
-            <input {...register('diagnosis')} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 border" />
+        )}
+
+        {step === 3 && (
+          <div className="space-y-6 animate-in fade-in slide-in-from-right">
+            <h3 className="text-xl font-bold text-gray-900 border-b pb-2">AREA 3 — Anamnesi Medica e Diagnosi</h3>
+            <div><label className="text-xs font-bold text-gray-400 uppercase">Diagnosi Attuale (DSM-5/ICD-11)</label>
+            <input className="w-full p-4 rounded-xl bg-gray-50 border-none" value={formData.diagnosis} onChange={e => setFormData({...formData, diagnosis: e.target.value})} /></div>
+            <div><label className="text-xs font-bold text-gray-400 uppercase">Terapia Farmacologica</label>
+            <textarea className="w-full p-4 rounded-xl bg-gray-50 border-none" rows={2} value={formData.medications} onChange={e => setFormData({...formData, medications: e.target.value})} /></div>
           </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Livello Comunicativo</label>
-            <input {...register('communication_level')} placeholder="es. non verbale, frasi brevi" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 border" />
+        )}
+
+        {step === 4 && (
+          <div className="space-y-6 animate-in fade-in slide-in-from-right">
+            <h3 className="text-xl font-bold text-gray-900 border-b pb-2">AREA 4 — Profilo Comunicativo e Linguistico</h3>
+            <div><label className="text-xs font-bold text-gray-400 uppercase">Modalità Prevalente</label>
+            <select className="w-full p-4 rounded-xl bg-gray-50 border-none" value={formData.comm_modality} onChange={e => setFormData({...formData, comm_modality: e.target.value})}>
+              <option value="verbale">Verbale Funzionale</option>
+              <option value="limitato">Verbale Limitato</option>
+              <option value="caa">CAA / Gestuale</option>
+              <option value="assente">Assente</option>
+            </select></div>
+            <div><label className="text-xs font-bold text-gray-400 uppercase">Valutazione Comprensione (1-5)</label>
+            <input type="range" min="1" max="5" className="w-full" value={formData.comm_evaluation} onChange={e => setFormData({...formData, comm_evaluation: e.target.value})} /></div>
           </div>
-        </div>
+        )}
+
+        {step === 5 && (
+          <div className="space-y-6 animate-in fade-in slide-in-from-right">
+            <h3 className="text-xl font-bold text-gray-900 border-b pb-2">AREA 5 — Funzioni Cognitive e Adattive</h3>
+            <div><label className="text-xs font-bold text-gray-400 uppercase">Attenzione e Memoria (1-5)</label>
+            <input type="range" min="1" max="5" className="w-full" value={formData.cognitive_attention} onChange={e => setFormData({...formData, cognitive_attention: e.target.value})} /></div>
+            <div><label className="text-xs font-bold text-gray-400 uppercase">Autonomie Personali</label>
+            <textarea className="w-full p-4 rounded-xl bg-gray-50 border-none" rows={3} value={formData.cognitive_autonomy} onChange={e => setFormData({...formData, cognitive_autonomy: e.target.value})} /></div>
+          </div>
+        )}
+
+        {step === 6 && (
+          <div className="space-y-6 animate-in fade-in slide-in-from-right">
+            <h3 className="text-xl font-bold text-gray-900 border-b pb-2">AREA 6 — Profilo Motorio e Sensoriale</h3>
+            <div className="grid grid-cols-2 gap-4">
+              <div><label className="text-xs font-bold text-gray-400 uppercase">Tono Muscolare</label>
+              <input className="w-full p-4 rounded-xl bg-gray-50 border-none" value={formData.motor_tone} onChange={e => setFormData({...formData, motor_tone: e.target.value})} /></div>
+              <div><label className="text-xs font-bold text-gray-400 uppercase">Sensorialità</label>
+              <input className="w-full p-4 rounded-xl bg-gray-50 border-none" value={formData.motor_sensory} onChange={e => setFormData({...formData, motor_sensory: e.target.value})} /></div>
+            </div>
+          </div>
+        )}
+
+        {step === 7 && (
+          <div className="space-y-6 animate-in fade-in slide-in-from-right">
+            <h3 className="text-xl font-bold text-gray-900 border-b pb-2">AREA 7 — Profilo Emotivo e Relazionale</h3>
+            <div><label className="text-xs font-bold text-gray-400 uppercase">Comportamenti e Regolazione</label>
+            <textarea className="w-full p-4 rounded-xl bg-gray-50 border-none" rows={3} value={formData.emotions_behaviors} onChange={e => setFormData({...formData, emotions_behaviors: e.target.value})} /></div>
+            <div><label className="text-xs font-bold text-gray-400 uppercase">Interessi Prevalenti / Trigger</label>
+            <input className="w-full p-4 rounded-xl bg-gray-50 border-none" value={formData.special_interests} onChange={e => setFormData({...formData, special_interests: e.target.value})} /></div>
+          </div>
+        )}
+
+        {step === 8 && (
+          <div className="space-y-6 animate-in fade-in slide-in-from-right">
+            <h3 className="text-xl font-bold text-gray-900 border-b pb-2">AREA 8 — Contesto Scolastico e Terapeutico</h3>
+            <div><label className="text-xs font-bold text-gray-400 uppercase">Ore di Sostegno / PEI</label>
+            <input className="w-full p-4 rounded-xl bg-gray-50 border-none" value={formData.school_support} onChange={e => setFormData({...formData, school_support: e.target.value})} /></div>
+            <div><label className="text-xs font-bold text-gray-400 uppercase">Terapie in Corso</label>
+            <textarea className="w-full p-4 rounded-xl bg-gray-50 border-none" rows={3} value={formData.current_therapies} onChange={e => setFormData({...formData, current_therapies: e.target.value})} /></div>
+          </div>
+        )}
+
+        {step === 9 && (
+          <div className="space-y-6 animate-in fade-in slide-in-from-right">
+            <h3 className="text-xl font-bold text-gray-900 border-b pb-2">AREA 9 — Risorse Familiari</h3>
+            <div><label className="text-xs font-bold text-gray-400 uppercase">Collaborazione (1-5)</label>
+            <input type="range" min="1" max="5" className="w-full" value={formData.family_cooperation} onChange={e => setFormData({...formData, family_cooperation: e.target.value})} /></div>
+            <div><label className="text-xs font-bold text-gray-400 uppercase">Routine e Supporto</label>
+            <textarea className="w-full p-4 rounded-xl bg-gray-50 border-none" rows={3} value={formData.family_stress} onChange={e => setFormData({...formData, family_stress: e.target.value})} /></div>
+          </div>
+        )}
+
+        {step === 10 && (
+          <div className="space-y-6 animate-in fade-in slide-in-from-right">
+            <h3 className="text-xl font-bold text-gray-900 border-b pb-2">AREA 10 — Obiettivi e Note Cliniche</h3>
+            <div><label className="text-xs font-bold text-gray-400 uppercase">Obiettivi 3-6 Mesi</label>
+            <textarea className="w-full p-4 rounded-xl bg-gray-50 border-none" rows={3} value={formData.goals_short} onChange={e => setFormData({...formData, goals_short: e.target.value})} /></div>
+            <div><label className="text-xs font-bold text-gray-400 uppercase">Strumenti CAA Valutati</label>
+            <input className="w-full p-4 rounded-xl bg-gray-50 border-none" placeholder="PECS, VOCA, tabelle..." value={formData.caa_tools} onChange={e => setFormData({...formData, caa_tools: e.target.value})} /></div>
+          </div>
+        )}
       </div>
 
-      <hr />
-
-      <div>
-        <h3 className="text-lg font-medium leading-6 text-gray-900">Difficoltà</h3>
-        <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
-           <div>
-            <label className="block text-sm font-medium text-gray-700">Errori Fonetici</label>
-            <textarea {...register('phonetic_errors')} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 border" />
-          </div>
-           <div>
-            <label className="block text-sm font-medium text-gray-700">Ritardi Linguistici</label>
-            <textarea {...register('language_delays')} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 border" />
-          </div>
-          <div className="flex items-center space-x-4">
-             <div className="flex items-center">
-                <input type="checkbox" {...register('adhd')} className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
-                <label className="ml-2 block text-sm text-gray-900">ADHD</label>
-             </div>
-             <div className="flex items-center">
-                <input type="checkbox" {...register('autism')} className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
-                <label className="ml-2 block text-sm text-gray-900">Autismo</label>
-             </div>
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Tempi di attenzione (minuti)</label>
-            <input type="number" {...register('attention_span')} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 border" />
-          </div>
-        </div>
-      </div>
-
-      <hr />
-
-       <div>
-        <h3 className="text-lg font-medium leading-6 text-gray-900">Sensorialità</h3>
-        <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
-            <div className="flex items-center space-x-4">
-             <div className="flex items-center">
-                <input type="checkbox" {...register('noise_hypersensitivity')} className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
-                <label className="ml-2 block text-sm text-gray-900">Ipersensibilità rumori</label>
-             </div>
-             <div className="flex items-center">
-                <input type="checkbox" {...register('visual_sensitivity')} className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
-                <label className="ml-2 block text-sm text-gray-900">Sensibilità visiva</label>
-             </div>
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Trigger Emotivi</label>
-            <textarea {...register('emotional_triggers')} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 border" />
-          </div>
-        </div>
-      </div>
-
-      <hr />
-
-      <div>
-        <h3 className="text-lg font-medium leading-6 text-gray-900">Punti di Forza</h3>
-        <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
-           <div>
-            <label className="block text-sm font-medium text-gray-700">Interessi Speciali</label>
-            <input {...register('special_interests')} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 border" />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Giochi Preferiti</label>
-            <input {...register('favorite_games')} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 border" />
-          </div>
-        </div>
-      </div>
-
-       <hr />
-
-      <div>
-        <h3 className="text-lg font-medium leading-6 text-gray-900">Obiettivi Educativi</h3>
-        <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
-           <div>
-            <label className="block text-sm font-medium text-gray-700">Vocabolario</label>
-            <textarea {...register('vocabulary_goals')} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 border" />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Regolazione Emotiva</label>
-            <textarea {...register('emotional_regulation_goals')} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 border" />
-          </div>
-        </div>
-      </div>
-
-      <div className="pt-5">
-        <div className="flex justify-end">
-          <button
-            type="button"
-            onClick={() => router.back()}
-            className="rounded-md border border-gray-300 bg-white py-2 px-4 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-          >
-            Annulla
+      <div className="flex gap-4 mt-12">
+        {step > 1 && <button onClick={prevStep} className="px-8 py-4 bg-gray-100 text-gray-600 rounded-2xl font-bold hover:bg-gray-200 transition-all">Indietro</button>}
+        {step < 10 ? (
+          <button onClick={nextStep} className="flex-1 py-4 bg-blue-600 text-white rounded-2xl font-bold shadow-lg hover:bg-blue-700 transition-all">Prossima Area</button>
+        ) : (
+          <button onClick={handleSubmit} disabled={loading} className="flex-1 py-4 bg-green-600 text-white rounded-2xl font-bold shadow-lg hover:bg-green-700 transition-all">
+            {loading ? 'Salvataggio...' : 'Finalizza Scheda Paziente'}
           </button>
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="ml-3 inline-flex justify-center rounded-md border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-          >
-            {isSubmitting ? 'Salvataggio...' : 'Salva Profilo'}
-          </button>
-        </div>
+        )}
       </div>
-    </form>
+    </div>
   );
 }
